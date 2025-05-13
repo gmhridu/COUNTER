@@ -2481,7 +2481,8 @@
           <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
           <p class="text-theme-color">Home</p>
         </a>
-        <a href="./Showroom.html" class="border-b-2 border-theme-color rounded hover:text-theme-color py-2 flex items-center"
+        <a href="./Showroom.html"
+          class="border-b-2 border-theme-color rounded hover:text-theme-color py-2 flex items-center"
           aria-label="View Showroom Page">
           <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
           <p class="text-theme-color">Showroom</p>
@@ -2590,348 +2591,7 @@
               </div>
             </div>
 
-            <!-- Marble Options Modal -->
-            <div id="marbleOptions" class="fixed inset-0 bg-black/90 flex items-center justify-center z-[100] hidden">
-              <div class="bg-white w-full h-full md:w-[95%] md:h-[95vh] md:rounded-2xl overflow-y-auto relative z-50">
-                <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-50">
-                  <button onclick="toggleMarbleOptions()"
-                    class="bg-gradient-to-br from-[#78551b] to-[#cba96f] hover:from-[#cba96f] hover:to-[#78551b] text-white px-4 py-2 md:px-6 md:py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-sm md:text-base touch-manipulation active:scale-95">
-                    <i class="fas fa-arrow-left text-sm md:text-base"></i>
-                    <span class="hidden sm:inline">Back to Collections</span>
-                    <span class="sm:hidden">Back</span>
-                  </button>
-                  <button onclick="toggleMarbleOptions()"
-                    class="text-gray-500 hover:text-gray-700 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300">
-                    <i class="fas fa-times text-lg md:text-2xl"></i>
-                  </button>
-                </div>
 
-                <div class="p-4 md:p-8">
-                  <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-8 text-center">
-                    Marble Collection
-                  </h3>
-
-                  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
-                    <!-- Carrara White -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Carrara White', 'Images/Carrara_White_Marble.jpeg', 'Soft white or blue-gray marble with delicate grey veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Carrara_White_Marble.jpeg" alt="Carrara White"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Carrara White
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Soft white or blue-gray marble with delicate grey
-                          veining. Timeless and versatile.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$75/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Calacatta Gold -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Calacatta Gold', 'Images/Calacatta_Gold_Marble.jpeg', 'Luxurious Italian marble featuring dramatic gold veining on a bright white background.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Calacatta_Gold_Marble.jpeg" alt="Calacatta Gold Marble"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Calacatta Gold
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Bright white marble with bold grey-gold veining. A
-                          high-end luxury choice.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Statuario -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Statuario', 'Images/Statuario_Marble.jpeg', 'Premium Italian marble with bold, dramatic veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Statuario_Marble.jpeg" alt="Statuario Marble"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Statuario
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Stark white marble with dramatic grey veining. Ideal
-                          for modern designs.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$90/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Emperador Dark -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Emperador Dark', 'Images/Emperador_Dark_Marble.jpg', 'Rich brown marble with swirling cream and amber veins.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Emperador_Dark_Marble.jpg" alt="Emperador Dark"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Emperador Dark
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Rich brown marble with swirling cream and amber
-                          veins. Warm and elegant.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$80/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Crema Marfil -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Crema Marfil', 'Images/Crema_Marfil_Marble.jpg', 'Warm ivory-beige marble with subtle veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Crema_Marfil_Marble.jpg" alt="Crema Marfil"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Crema Marfil
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Warm ivory-beige marble with subtle veining. Classic
-                          for traditional spaces.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$75/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Thassos White -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Thassos White', 'Images/Thassos_White_Marble.webp', 'Pure white marble with minimal veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Thassos_White_Marble.webp" alt="Thassos White"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Thassos White
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Pure white marble with minimal veining. Perfect for
-                          minimalist aesthetics.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Arabescato -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Arabescato', 'Images/Arabescato_Marble.jpg', 'Pure white marble with minimal veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Arabescato_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Arabescato
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          White marble with intricate grey and gold veining. A
-                          luxurious option for high-end spaces. Image
-                          Reference: arabescato marble
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Bianco Carrara -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Bianco Carrara', 'Images/Bianco_Carrara_Marble.jpg', 'Pure white marble with minimal veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Bianco_Carrara_Marble.jpg" alt="Arabescato"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Bianco Carrara
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Classic white marble with subtle grey veining, a
-                          timeless choice for any project. Image Reference:
-                          bianco carrara marble
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Calacatta Borghini -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Calacatta Borghini', 'Images/Calacatta_Borghini_Marble.jpg', 'Pure white marble with minimal veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Calacatta_Borghini_Marble.jpg" alt="Arabescato"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Calacatta Borghini
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Elegant white marble with dramatic grey and gold
-                          veining, offering a sophisticated look. Image
-                          Reference
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Volakas Marble -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Volakas Marble', 'Images/Volakas_Marble.jpg', 'Pure white marble with minimal veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Volakas_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Volakas Marble
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Bright white marble with subtle grey veins and a
-                          soft, almost cloud-like pattern, giving a serene and
-                          elegant aesthetic. It’s perfect for both modern and
-                          traditional designs.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Marquina Black -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Marquina Black', 'Images/Marquina_Black_Marble.jpg', 'Pure white marble with minimal veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Marquina_Black_Marble.jpg" alt="Arabescato"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Marquina Black
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Jet-black marble with striking white veining. A
-                          bold, luxurious material. Image Reference: marquina
-                          black marble
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Verde Alpi -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Verde Alpi', 'Images/Verde_Alpi_Marble.jpg', 'Pure white marble with minimal veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Verde_Alpi_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Verde Alpi
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          A deep green marble with vibrant white veining,
-                          offering a striking yet elegant look. Perfect for
-                          luxury and modern designs, creating a bold statement
-                          in any space
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <!-- Granite Collection -->
             <div
@@ -2964,345 +2624,7 @@
               </div>
             </div>
 
-            <!-- Granite Options Modal -->
-            <div id="graniteOptions" class="fixed inset-0 bg-black/90 flex items-center justify-center z-50 hidden">
-              <div class="bg-white w-full h-full md:w-[95%] md:h-[95vh] md:rounded-2xl overflow-y-auto relative z-50">
-                <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-50">
-                  <button onclick="toggleGraniteOptions()"
-                    class="bg-gradient-to-br from-[#78551b] to-[#cba96f] hover:from-[#cba96f] hover:to-[#78551b] text-white px-4 py-2 md:px-6 md:py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-sm md:text-base touch-manipulation active:scale-95">
-                    <i class="fas fa-arrow-left text-sm md:text-base"></i>
-                    <span class="hidden sm:inline">Back to Collections</span>
-                    <span class="sm:hidden">Back</span>
-                  </button>
-                  <button onclick="toggleGraniteOptions()"
-                    class="text-gray-500 hover:text-gray-700 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300">
-                    <i class="fas fa-times text-lg md:text-2xl"></i>
-                  </button>
-                </div>
 
-                <div class="p-4 md:p-8">
-                  <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-8 text-center">
-                    Granite Collection
-                  </h3>
-
-                  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
-                    <!-- Absolute Black -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Absolute Black', 'Images/Absolute_Black_Granite.jpg', 'Deep black granite with minimal grain, perfect for modern designs.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Absolute_Black_Granite.jpg" alt="Absolute Black"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Absolute Black
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Solid jet-black granite with a polished finish.
-                          Sleek and low-maintenance.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$65/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Santa Cecilia -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Santa Cecilia', 'Images/Santa_Cecilia_Granite.jpg', 'White granite with gray and burgundy speckles.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Santa_Cecilia_Granite.jpg" alt="Alaska White"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Santa Cecilia
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Golden-beige granite with caramel speckles. Neutral
-                          and durable.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$60/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Ubatuba -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Ubatuba', 'Images/Ubatuba_Granite.jpeg', 'Norwegian granite with blue-gray background and silver flecks.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Ubatuba_Granite.jpeg" alt="Ubatuba" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Ubatuba
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Green-black granite with glittering gold and bronze
-                          flecks. Bold texture.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$70/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Baltic Brown -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Baltic Brown', 'Images/Baltic_Brown_Granite.jpg', 'Warm golden granite with burgundy and gray speckles.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Baltic_Brown_Granite.jpg" alt="Giallo Ornamental"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Baltic Brown
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Dark brown granite with amber and black speckles.
-                          Rustic charm.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$55/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Giallo Ornamental -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Giallo Ornamental', 'Images/Giallo_Ornamental_Granite.jpg', 'Classic granite with golden background and brown speckles.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Giallo_Ornamental_Granite.jpg" alt="Santa Cecilia"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Giallo Ornamental
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Light beige granite with soft grey and burgundy
-                          flecks. Neutral versatility.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$58/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Blue Pearl -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Blue Pearl', 'Images/Blue_Pearl_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Blue_Pearl_Granite.jpg" alt="Blue Pearl" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Blue Pearl
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Blue-gray granite with metallic silver flecks.
-                          Shimmery and unique.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- New Venetian Gold -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Blue Pearl', 'Images/New_Venetian_Gold_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/New_Venetian_Gold_Granite.jpg" alt="New Venetian Gold"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          New Venetian Gold
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Golden-beige granite with brown and black speckles.
-                          Timeless and versatile. Image Reference: new
-                          venetian gold granite
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Colonial White -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Colonial White', 'Images/Colonial_White_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Colonial_White_Granite.jpg" alt="Colonial White"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Colonial White
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Light grey and white granite with speckles of black
-                          and brown. Clean and classic. Image Reference:
-                          colonial white granite
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Black Pearl -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Black Pearl', 'Images/Black_Pearl_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Black_Pearl_Granite.jpg" alt="Black Pearl"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Black Pearl
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Deep black granite with small flecks of gold and
-                          silver, giving it a shimmering appearance. Image
-                          Reference: black pearl granite
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Magma Gold -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Magma Gold', 'Images/Magma_Gold_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Magma_Gold_Granite.jpg" alt="Magma Gold" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Magma Gold
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Warm golden-brown granite with fiery black veins,
-                          perfect for rustic or modern spaces. Image
-                          Reference: magma gold granite
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Kashmir White -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Kashmir White', 'Images/Kashmir_White_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Kashmir_White_Granite.jpg" alt="Kashmir White"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Kashmir White
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          A light-colored granite with soft grey, beige, and
-                          brown speckles, offering a classic neutral look.
-                          Image Reference: kashmir white granite
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Tan Brown -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Tan Brown', 'Images/Tan_Brown_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Tan_Brown_Granite.jpg" alt="Tan Brown" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Tan Brown
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Deep brown granite with black and red specks, a bold
-                          and rugged option. Image Reference: tan brown
-                          granite
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <!-- Quartz Collection -->
             <div
@@ -3335,933 +2657,1601 @@
               </div>
             </div>
 
-            <!-- Quartz Options Modal -->
-            <div id="quartzOptions" class="fixed inset-0 bg-black/90 flex items-center justify-center z-50 hidden">
-              <div class="bg-white w-full h-full md:w-[95%] md:h-[95vh] md:rounded-2xl overflow-y-auto relative z-50">
-                <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-50">
-                  <button onclick="toggleQuartzOptions()"
-                    class="bg-gradient-to-br from-[#78551b] to-[#cba96f] hover:from-[#cba96f] hover:to-[#78551b] text-white px-4 py-2 md:px-6 md:py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-sm md:text-base touch-manipulation active:scale-95">
-                    <i class="fas fa-arrow-left text-sm md:text-base"></i>
-                    <span class="hidden sm:inline">Back to Collections</span>
-                    <span class="sm:hidden">Back</span>
-                  </button>
-                  <button onclick="toggleQuartzOptions()"
-                    class="text-gray-500 hover:text-gray-700 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300">
-                    <i class="fas fa-times text-lg md:text-2xl"></i>
-                  </button>
+
+          </div>
+        </div>
+      </section>
+      <!-- Modals -->
+      <!-- Marble Options Modal -->
+      <div id="marbleOptions" class="fixed inset-0 bg-black/90 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white w-full h-full md:w-[95%] md:h-[95vh] md:rounded-2xl overflow-y-auto relative z-50">
+          <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-50">
+            <button onclick="toggleMarbleOptions()"
+              class="bg-gradient-to-br from-[#78551b] to-[#cba96f] hover:from-[#cba96f] hover:to-[#78551b] text-white px-4 py-2 md:px-6 md:py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-sm md:text-base touch-manipulation active:scale-95">
+              <i class="fas fa-arrow-left text-sm md:text-base"></i>
+              <span class="hidden sm:inline">Back to Collections</span>
+              <span class="sm:hidden">Back</span>
+            </button>
+            <button onclick="toggleMarbleOptions()"
+              class="text-gray-500 hover:text-gray-700 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300">
+              <i class="fas fa-times text-lg md:text-2xl"></i>
+            </button>
+          </div>
+
+          <div class="p-4 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-8 text-center">
+              Marble Collection
+            </h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+              <!-- Carrara White -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Carrara White', 'Images/Carrara_White_Marble.jpeg', 'Soft white or blue-gray marble with delicate grey veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Carrara_White_Marble.jpeg" alt="Carrara White" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
                 </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Carrara White
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Soft white or blue-gray marble with delicate grey
+                    veining. Timeless and versatile.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$75/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                <div class="p-4 md:p-8">
-                  <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-8 text-center">
-                    Quartz Collection
-                  </h3>
+              <!-- Calacatta Gold -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Calacatta Gold', 'Images/Calacatta_Gold_Marble.jpeg', 'Luxurious Italian marble featuring dramatic gold veining on a bright white background.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Calacatta_Gold_Marble.jpeg" alt="Calacatta Gold Marble"
+                    class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Calacatta Gold
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Bright white marble with bold grey-gold veining. A
+                    high-end luxury choice.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
-                    <!-- Calacatta Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Calacatta Quartz', 'Images/Calacatta_Quartz.jpeg', 'Luxurious quartz mimicking Calacatta marble with dramatic veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Calacatta_Quartz.jpeg" alt="Calacatta Gold"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Calacatta Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Engineered quartz mimicking Calacatta marble—bright
-                          white with bold grey veining.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$95/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Statuario -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Statuario', 'Images/Statuario_Marble.jpeg', 'Premium Italian marble with bold, dramatic veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Statuario_Marble.jpeg" alt="Statuario Marble" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Statuario
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Stark white marble with dramatic grey veining. Ideal
+                    for modern designs.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$90/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Carrara Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Carrara Quartz', 'Images/Carrara_Quartz.jpeg', 'Premium quartz with bold veining like Statuario marble.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Carrara_Quartz.jpeg" alt="Statuario" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Carrara Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Soft grey-white quartz with linear veining.
-                          Affordable marble alternative.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$100/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Emperador Dark -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Emperador Dark', 'Images/Emperador_Dark_Marble.jpg', 'Rich brown marble with swirling cream and amber veins.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Emperador_Dark_Marble.jpg" alt="Emperador Dark" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Emperador Dark
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Rich brown marble with swirling cream and amber
+                    veins. Warm and elegant.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$80/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Pure White Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Pure White Quartz', 'Images/Pure_White_Quartz.jpeg', 'Classic white quartz with subtle gray veining.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Pure_White_Quartz.jpeg" alt="Carrara" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Pure White Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Solid white quartz with a minimalist, non-porous
-                          surface
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Crema Marfil -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Crema Marfil', 'Images/Crema_Marfil_Marble.jpg', 'Warm ivory-beige marble with subtle veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Crema_Marfil_Marble.jpg" alt="Crema Marfil" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Crema Marfil
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Warm ivory-beige marble with subtle veining. Classic
+                    for traditional spaces.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$75/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Jet Black Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Jet Black Quartz', 'Images/Jet_Black_Quartz.jpeg', 'Deep black quartz with minimal grain for modern designs.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Jet_Black_Quartz.jpeg" alt="Black Tempal" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Jet Black Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Solid black quartz with a polished finish. Modern
-                          and stain-resistant.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$90/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Thassos White -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Thassos White', 'Images/Thassos_White_Marble.webp', 'Pure white marble with minimal veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Thassos_White_Marble.webp" alt="Thassos White" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Thassos White
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Pure white marble with minimal veining. Perfect for
+                    minimalist aesthetics.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Taj Mahal Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Taj Mahal Quartz', 'Images/Taj_Mahal_Quartz.jpg', 'Pure white quartz with minimal veining for clean aesthetics.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Taj_Mahal_Quartz.jpg" alt="Ice White" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Taj Mahal Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Creamy white quartz with soft gold-grey veining.
-                          Warm and elegant.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$88/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Arabescato -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Arabescato', 'Images/Arabescato_Marble.jpg', 'Pure white marble with minimal veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Arabescato_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Arabescato
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    White marble with intricate grey and gold veining. A
+                    luxurious option for high-end spaces. Image
+                    Reference: arabescato marble
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Statuario Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Statuario Quartz', 'Images/Statuario_Quartz.jpeg', 'Warm beige quartz with subtle veining for traditional spaces.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Statuario_Quartz.jpeg" alt="Taj Mahal" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Statuario Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Bright white quartz with dramatic grey veining.
-                          High-contrast luxury.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Bianco Carrara -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Bianco Carrara', 'Images/Bianco_Carrara_Marble.jpg', 'Pure white marble with minimal veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Bianco_Carrara_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Bianco Carrara
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Classic white marble with subtle grey veining, a
+                    timeless choice for any project. Image Reference:
+                    bianco carrara marble
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- White Zeus -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('White Zeus', 'Images/White_Zeus_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/White_Zeus_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          White Zeus
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Pure white quartz with a sleek, minimalist look.
-                          Smooth, non-porous, and durable. Image Reference:
-                          white zeus quartz
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Calacatta Borghini -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Calacatta Borghini', 'Images/Calacatta_Borghini_Marble.jpg', 'Pure white marble with minimal veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Calacatta_Borghini_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Calacatta Borghini
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Elegant white marble with dramatic grey and gold
+                    veining, offering a sophisticated look. Image
+                    Reference
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Breccia Aurora -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Breccia Aurora', 'Images/Breccia_Aurora_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Breccia_Aurora_Quartz.jpg" alt="Taj Mahal"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Breccia Aurora
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Off-white quartz with dynamic patterns of gold,
-                          beige, and brown. Elegant and eye-catching. Image
-                          Reference: breccia aurora quartz
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Volakas Marble -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Volakas Marble', 'Images/Volakas_Marble.jpg', 'Pure white marble with minimal veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Volakas_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Volakas Marble
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Bright white marble with subtle grey veins and a
+                    soft, almost cloud-like pattern, giving a serene and
+                    elegant aesthetic. It’s perfect for both modern and
+                    traditional designs.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Marble Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Marble Quartz', 'Images/Marble_Quartz.jpeg', 'Warm beige quartz with subtle veining for traditional spaces.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Marble_Quartz.jpeg" alt="Taj Mahal" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Marble Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          A quartz surface that mimics the look of marble with
-                          grey and white veining, offering durability with
-                          beauty.
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Marquina Black -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Marquina Black', 'Images/Marquina_Black_Marble.jpg', 'Pure white marble with minimal veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Marquina_Black_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Marquina Black
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Jet-black marble with striking white veining. A
+                    bold, luxurious material. Image Reference: marquina
+                    black marble
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
 
-                    <!-- Snowy White Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Snowy White Quartz', 'Images/Snowy_White_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Snowy_White_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Snowy White Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Soft white quartz with minimal flecks. A clean and
-                          modern look. Image Reference: snowy white quartz
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Calacatta Gold Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Calacatta Gold Quartz', 'Images/Calacatta_Gold_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Calacatta_Gold_Quartz.jpg" alt="Taj Mahal"
-                          class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Calacatta Gold Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Quartz with elegant, golden veins on a white
-                          background. Ideal for luxury spaces. Image
-                          Reference: calacatta gold quartz
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Lunar Grey Quartz -->
-                    <div
-                      class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onclick="openMarbleLightbox('Lunar Grey Quartz', 'Images/Lunar_Grey_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
-                      <div class="relative aspect-square overflow-hidden">
-                        <img src="Images/Lunar_Grey_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
-                        <div
-                          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <span class="text-white text-sm font-medium">Click to view in 3D</span>
-                        </div>
-                      </div>
-                      <div class="p-3 md:p-4">
-                        <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
-                          Lunar Grey Quartz
-                        </h4>
-                        <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
-                          Light grey quartz with subtle veining for a smooth,
-                          modern finish. Image Reference: lunar grey quartz
-                        </p>
-                        <div class="flex items-center">
-                          <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Verde Alpi -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Verde Alpi', 'Images/Verde_Alpi_Marble.jpg', 'Pure white marble with minimal veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Verde_Alpi_Marble.jpg" alt="Arabescato" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Verde Alpi
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    A deep green marble with vibrant white veining,
+                    offering a striking yet elegant look. Perfect for
+                    luxury and modern designs, creating a bold statement
+                    in any space
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <!-- Granite Options Modal -->
+      <div id="graniteOptions" class="fixed inset-0 bg-black/90 flex items-center justify-center z-50 hidden">
+        <div class="bg-white w-full h-full md:w-[95%] md:h-[95vh] md:rounded-2xl overflow-y-auto relative z-50">
+          <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-50">
+            <button onclick="toggleGraniteOptions()"
+              class="bg-gradient-to-br from-[#78551b] to-[#cba96f] hover:from-[#cba96f] hover:to-[#78551b] text-white px-4 py-2 md:px-6 md:py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-sm md:text-base touch-manipulation active:scale-95">
+              <i class="fas fa-arrow-left text-sm md:text-base"></i>
+              <span class="hidden sm:inline">Back to Collections</span>
+              <span class="sm:hidden">Back</span>
+            </button>
+            <button onclick="toggleGraniteOptions()"
+              class="text-gray-500 hover:text-gray-700 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300">
+              <i class="fas fa-times text-lg md:text-2xl"></i>
+            </button>
+          </div>
+
+          <div class="p-4 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-8 text-center">
+              Granite Collection
+            </h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+              <!-- Absolute Black -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Absolute Black', 'Images/Absolute_Black_Granite.jpg', 'Deep black granite with minimal grain, perfect for modern designs.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Absolute_Black_Granite.jpg" alt="Absolute Black"
+                    class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Absolute Black
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Solid jet-black granite with a polished finish.
+                    Sleek and low-maintenance.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$65/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Santa Cecilia -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Santa Cecilia', 'Images/Santa_Cecilia_Granite.jpg', 'White granite with gray and burgundy speckles.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Santa_Cecilia_Granite.jpg" alt="Alaska White" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Santa Cecilia
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Golden-beige granite with caramel speckles. Neutral
+                    and durable.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$60/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ubatuba -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Ubatuba', 'Images/Ubatuba_Granite.jpeg', 'Norwegian granite with blue-gray background and silver flecks.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Ubatuba_Granite.jpeg" alt="Ubatuba" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Ubatuba
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Green-black granite with glittering gold and bronze
+                    flecks. Bold texture.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$70/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Baltic Brown -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Baltic Brown', 'Images/Baltic_Brown_Granite.jpg', 'Warm golden granite with burgundy and gray speckles.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Baltic_Brown_Granite.jpg" alt="Giallo Ornamental"
+                    class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Baltic Brown
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Dark brown granite with amber and black speckles.
+                    Rustic charm.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$55/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Giallo Ornamental -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Giallo Ornamental', 'Images/Giallo_Ornamental_Granite.jpg', 'Classic granite with golden background and brown speckles.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Giallo_Ornamental_Granite.jpg" alt="Santa Cecilia"
+                    class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Giallo Ornamental
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Light beige granite with soft grey and burgundy
+                    flecks. Neutral versatility.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$58/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blue Pearl -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Blue Pearl', 'Images/Blue_Pearl_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Blue_Pearl_Granite.jpg" alt="Blue Pearl" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Blue Pearl
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Blue-gray granite with metallic silver flecks.
+                    Shimmery and unique.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- New Venetian Gold -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Blue Pearl', 'Images/New_Venetian_Gold_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/New_Venetian_Gold_Granite.jpg" alt="New Venetian Gold"
+                    class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    New Venetian Gold
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Golden-beige granite with brown and black speckles.
+                    Timeless and versatile. Image Reference: new
+                    venetian gold granite
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Colonial White -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Colonial White', 'Images/Colonial_White_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Colonial_White_Granite.jpg" alt="Colonial White"
+                    class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Colonial White
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Light grey and white granite with speckles of black
+                    and brown. Clean and classic. Image Reference:
+                    colonial white granite
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Black Pearl -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Black Pearl', 'Images/Black_Pearl_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Black_Pearl_Granite.jpg" alt="Black Pearl" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Black Pearl
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Deep black granite with small flecks of gold and
+                    silver, giving it a shimmering appearance. Image
+                    Reference: black pearl granite
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Magma Gold -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Magma Gold', 'Images/Magma_Gold_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Magma_Gold_Granite.jpg" alt="Magma Gold" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Magma Gold
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Warm golden-brown granite with fiery black veins,
+                    perfect for rustic or modern spaces. Image
+                    Reference: magma gold granite
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kashmir White -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Kashmir White', 'Images/Kashmir_White_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Kashmir_White_Granite.jpg" alt="Kashmir White" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Kashmir White
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    A light-colored granite with soft grey, beige, and
+                    brown speckles, offering a classic neutral look.
+                    Image Reference: kashmir white granite
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tan Brown -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Tan Brown', 'Images/Tan_Brown_Granite.jpg', 'Dark green granite with flecks of gold, black and white.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Tan_Brown_Granite.jpg" alt="Tan Brown" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Tan Brown
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Deep brown granite with black and red specks, a bold
+                    and rugged option. Image Reference: tan brown
+                    granite
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$62/sqft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quartz Options Modal -->
+      <div id="quartzOptions" class="fixed inset-0 bg-black/90 flex items-center justify-center z-50 hidden">
+        <div class="bg-white w-full h-full md:w-[95%] md:h-[95vh] md:rounded-2xl overflow-y-auto relative z-50">
+          <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-50">
+            <button onclick="toggleQuartzOptions()"
+              class="bg-gradient-to-br from-[#78551b] to-[#cba96f] hover:from-[#cba96f] hover:to-[#78551b] text-white px-4 py-2 md:px-6 md:py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 text-sm md:text-base touch-manipulation active:scale-95">
+              <i class="fas fa-arrow-left text-sm md:text-base"></i>
+              <span class="hidden sm:inline">Back to Collections</span>
+              <span class="sm:hidden">Back</span>
+            </button>
+            <button onclick="toggleQuartzOptions()"
+              class="text-gray-500 hover:text-gray-700 w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300">
+              <i class="fas fa-times text-lg md:text-2xl"></i>
+            </button>
+          </div>
+
+          <div class="p-4 md:p-8">
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-8 text-center">
+              Quartz Collection
+            </h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+              <!-- Calacatta Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Calacatta Quartz', 'Images/Calacatta_Quartz.jpeg', 'Luxurious quartz mimicking Calacatta marble with dramatic veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Calacatta_Quartz.jpeg" alt="Calacatta Gold" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Calacatta Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Engineered quartz mimicking Calacatta marble—bright
+                    white with bold grey veining.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$95/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carrara Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Carrara Quartz', 'Images/Carrara_Quartz.jpeg', 'Premium quartz with bold veining like Statuario marble.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Carrara_Quartz.jpeg" alt="Statuario" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Carrara Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Soft grey-white quartz with linear veining.
+                    Affordable marble alternative.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$100/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pure White Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Pure White Quartz', 'Images/Pure_White_Quartz.jpeg', 'Classic white quartz with subtle gray veining.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Pure_White_Quartz.jpeg" alt="Carrara" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Pure White Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Solid white quartz with a minimalist, non-porous
+                    surface
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$85/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jet Black Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Jet Black Quartz', 'Images/Jet_Black_Quartz.jpeg', 'Deep black quartz with minimal grain for modern designs.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Jet_Black_Quartz.jpeg" alt="Black Tempal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Jet Black Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Solid black quartz with a polished finish. Modern
+                    and stain-resistant.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$90/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Taj Mahal Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Taj Mahal Quartz', 'Images/Taj_Mahal_Quartz.jpg', 'Pure white quartz with minimal veining for clean aesthetics.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Taj_Mahal_Quartz.jpg" alt="Ice White" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Taj Mahal Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Creamy white quartz with soft gold-grey veining.
+                    Warm and elegant.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$88/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Statuario Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Statuario Quartz', 'Images/Statuario_Quartz.jpeg', 'Warm beige quartz with subtle veining for traditional spaces.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Statuario_Quartz.jpeg" alt="Taj Mahal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Statuario Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Bright white quartz with dramatic grey veining.
+                    High-contrast luxury.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- White Zeus -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('White Zeus', 'Images/White_Zeus_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/White_Zeus_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    White Zeus
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Pure white quartz with a sleek, minimalist look.
+                    Smooth, non-porous, and durable. Image Reference:
+                    white zeus quartz
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Breccia Aurora -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Breccia Aurora', 'Images/Breccia_Aurora_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Breccia_Aurora_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Breccia Aurora
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Off-white quartz with dynamic patterns of gold,
+                    beige, and brown. Elegant and eye-catching. Image
+                    Reference: breccia aurora quartz
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Marble Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Marble Quartz', 'Images/Marble_Quartz.jpeg', 'Warm beige quartz with subtle veining for traditional spaces.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Marble_Quartz.jpeg" alt="Taj Mahal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Marble Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    A quartz surface that mimics the look of marble with
+                    grey and white veining, offering durability with
+                    beauty.
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Snowy White Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Snowy White Quartz', 'Images/Snowy_White_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Snowy_White_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Snowy White Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Soft white quartz with minimal flecks. A clean and
+                    modern look. Image Reference: snowy white quartz
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Calacatta Gold Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Calacatta Gold Quartz', 'Images/Calacatta_Gold_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Calacatta_Gold_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Calacatta Gold Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Quartz with elegant, golden veins on a white
+                    background. Ideal for luxury spaces. Image
+                    Reference: calacatta gold quartz
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lunar Grey Quartz -->
+              <div
+                class="group relative overflow-hidden rounded-xl bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+                onclick="openMarbleLightbox('Lunar Grey Quartz', 'Images/Lunar_Grey_Quartz.jpg', 'Warm beige quartz with subtle veining for traditional spaces.')">
+                <div class="relative aspect-square overflow-hidden">
+                  <img src="Images/Lunar_Grey_Quartz.jpg" alt="Taj Mahal" class="w-full h-full object-cover" />
+                  <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <span class="text-white text-sm font-medium">Click to view in 3D</span>
+                  </div>
+                </div>
+                <div class="p-3 md:p-4">
+                  <h4 class="text-base md:text-lg font-bold text-gray-900 mb-1">
+                    Lunar Grey Quartz
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-600 mb-2 line-clamp-2">
+                    Light grey quartz with subtle veining for a smooth,
+                    modern finish. Image Reference: lunar grey quartz
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-theme-color font-semibold text-sm md:text-base">$92/sqft</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div id="get-estimate-price-section"
-            class="bg-gradient-to-br from-gray-50 to-gray-100 py-16 relative overflow-hidden">
-            <!-- Decorative Elements -->
-            <div
-                class="absolute top-0 left-0 w-64 h-64 bg-theme-color/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
-            </div>
-            <div
-                class="absolute bottom-0 right-0 w-64 h-64 bg-theme-color/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2">
-            </div>
-
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <!-- Back Button -->
-
-
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
-                        Get Your Instant Quote
-                    </h2>
-                    <p class="text-xl text-gray-600 animate-fade-in-up">
-                        Select your material and size to get started
-                    </p>
-                    <div class="flex items-center justify-center gap-2 text-sm text-gray-500 mt-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-theme-color" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-                        <span>No obligation quote</span>
-                        <span class="text-gray-300">•</span>
-                        <span>100% Free</span>
-                    </div>
-                </div>
-
-                <!-- Progress Indicator -->
-                <div class="flex justify-between items-center mb-12 mt-4 max-w-2xl mx-auto relative">
-                    <div
-                        class="absolute top-1/2 left-0 w-full h-2 bg-gray-200 rounded-full -translate-y-1/2 overflow-hidden">
-                        <div
-                            class="absolute top-0 left-0 h-full bg-gradient-to-r from-theme-color to-theme-color/80 transition-all duration-500 ease-out progress-bar">
-                        </div>
-                    </div>
-
-                    <div
-                        class="step-number relative z-10 flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110">
-                        <div
-                            class="w-12 h-8 absolute -top-[44px] rounded-full bg-white border-2 border-theme-color text-theme-color flex items-center justify-center text-xl font-bold mb-2 shadow-lg group-hover:shadow-xl transition-all duration-300">
-                            1
-                        </div>
-                        <span
-                            class="absolute -bottom-[27px] text-sm font-medium text-gray-600 group-hover:text-theme-color transition-colors duration-300">Material</span>
-                    </div>
-
-                    <div
-                        class="step-number relative z-10 flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110">
-                        <div
-                            class="w-12 h-8 absolute -top-[44px] rounded-full bg-white border-2 border-theme-color text-gray-400 flex items-center justify-center text-xl font-bold mb-2 shadow-lg group-hover:shadow-xl transition-all duration-300">
-                            2
-                        </div>
-                        <span
-                            class="absolute -bottom-[27px] text-sm font-medium text-gray-400 group-hover:text-theme-color transition-colors duration-300">Size</span>
-                    </div>
-
-                    <div
-                        class="step-number relative z-10 flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110">
-                        <div
-                            class="w-12 h-8 absolute -top-[44px] rounded-full bg-white border-2 border-theme-color text-gray-400 flex items-center justify-center text-xl font-bold mb-2 shadow-lg group-hover:shadow-xl transition-all duration-300">
-                            3
-                        </div>
-                        <span
-                            class="absolute -bottom-[27px] text-sm font-medium text-gray-400 group-hover:text-theme-color transition-colors duration-300">Book</span>
-                    </div>
-                </div>
-
-                <style>
-                    .step-number.current {
-                        animation: pulse 2s infinite;
-                    }
-
-                    .step-number.completed {
-                        background: linear-gradient(135deg, #78551b, #98753a);
-                        color: white;
-                        border-color: transparent;
-                    }
-
-                    .step-number.completed .w-12 {
-                        background: linear-gradient(135deg, #78551b, #98753a);
-                        color: white;
-                        border-color: transparent;
-                    }
-
-                    .step-number.completed span {
-                        color: #78551b;
-                        font-weight: 600;
-                    }
-
-                    @keyframes pulse {
-                        0% {
-                            transform: scale(1);
-                            box-shadow: 0 0 0 0 rgba(203, 169, 111, 0.4);
-                        }
-
-                        70% {
-                            transform: scale(1.05);
-                            box-shadow: 0 0 0 10px rgba(203, 169, 111, 0);
-                        }
-
-                        100% {
-                            transform: scale(1);
-                            box-shadow: 0 0 0 0 rgba(203, 169, 111, 0);
-                        }
-                    }
-
-                    .progress-bar {
-                        transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-                        background: linear-gradient(135deg, #78551b, #98753a);
-                    }
-                </style>
-
-                <script>
-                    function updateProgress(step) {
-                        const progressBar = document.querySelector(".progress-bar");
-                        const stepNumbers = document.querySelectorAll(".step-number");
-
-                        // Update progress bar width
-                        const progress = (step / 3) * 100;
-                        progressBar.style.width = `${progress}%`;
-
-                        // Update step numbers
-                        stepNumbers.forEach((stepNumber, index) => {
-                            const numberDiv = stepNumber.querySelector(".w-12");
-                            const textSpan = stepNumber.querySelector("span");
-
-                            if (index < step) {
-                                // Completed steps
-                                stepNumber.classList.add("completed");
-                                stepNumber.classList.remove("current");
-                                numberDiv.classList.add("completed");
-                                textSpan.classList.add("completed");
-                            } else if (index === step) {
-                                // Current step
-                                stepNumber.classList.add("current");
-                                stepNumber.classList.remove("completed");
-                                numberDiv.classList.add("current");
-                                numberDiv.classList.remove("completed");
-                                textSpan.classList.add("current");
-                                textSpan.classList.remove("completed");
-                            } else {
-                                // Upcoming steps
-                                stepNumber.classList.remove("current", "completed");
-                                numberDiv.classList.remove("current", "completed");
-                                textSpan.classList.remove("current", "completed");
-                            }
-                        });
-                    }
-                </script>
-
-                <!-- Material Selection -->
-                <div class="material-options-container">
-                    <!-- Hidden input for material selection -->
-                    <input type="hidden" id="material" name="material" value="" />
-
-                    <button
-                        class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
-                        data-value="Remnants" data-price="55" onclick="selectMaterial(this)">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                        <div class="relative z-10">
-                            <div
-                                class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-cut text-3xl text-theme-color"></i>
-                            </div>
-                            <h3
-                                class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
-                                Remnants
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Quality materials at great value
-                            </p>
-                            <div class="text-2xl font-bold text-theme-color">$55/sqft</div>
-                            <div
-                                class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <i class="fas fa-arrow-right text-lg"></i>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button
-                        class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
-                        data-value="Granite" data-price="65" onclick="selectMaterial(this)">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                        <div class="relative z-10">
-                            <div
-                                class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-gem text-3xl text-theme-color"></i>
-                            </div>
-                            <h3
-                                class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
-                                Granite
-                            </h3>
-                            <p class="text-gray-600 mb-4">Natural beauty and durability</p>
-                            <div class="text-2xl font-bold text-theme-color">$65/sqft</div>
-                            <div
-                                class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <i class="fas fa-arrow-right text-lg"></i>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button
-                        class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
-                        data-value="Quartz" data-price="70" onclick="selectMaterial(this)">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                        <div class="relative z-10">
-                            <div
-                                class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-cube text-3xl text-theme-color"></i>
-                            </div>
-                            <h3
-                                class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
-                                Quartz
-                            </h3>
-                            <p class="text-gray-600 mb-4">Modern and low maintenance</p>
-                            <div class="text-2xl font-bold text-theme-color">$70/sqft</div>
-                            <div
-                                class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <i class="fas fa-arrow-right text-lg"></i>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button
-                        class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
-                        data-value="Marble" data-price="80" onclick="selectMaterial(this)">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        </div>
-                        <div class="relative z-10">
-                            <div
-                                class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-mountain text-3xl text-theme-color"></i>
-                            </div>
-                            <h3
-                                class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
-                                Marble
-                            </h3>
-                            <p class="text-gray-600 mb-4">Luxurious and timeless</p>
-                            <div class="text-2xl font-bold text-theme-color">$80/sqft</div>
-                            <div
-                                class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <i class="fas fa-arrow-right text-lg"></i>
-                            </div>
-                        </div>
-                    </button>
-                    <div>
-                    </div>
-
-                </div>
-
-                <script>
-                    function selectMaterial(button) {
-                        // Remove selected class from all options
-                        document.querySelectorAll(".material-option").forEach((opt) => {
-                            opt.classList.remove("selected");
-                        });
-
-                        // Add selected class to clicked option
-                        button.classList.add("selected");
-
-                        // Update hidden input
-                        document.getElementById("material").value = button.dataset.value;
-
-                        // Show back buttons
-                        document.getElementById("backButton").style.display = "block";
-
-                        // Hide hint text
-                        document.getElementById("hintText").classList.add("hidden");
-
-                        // Collapse material options container
-                        const container = document.querySelector(
-                            ".material-options-container"
-                        );
-                        container.classList.add("collapsed");
-
-                        // Hide other material options
-                        document.querySelectorAll(".material-option").forEach((opt) => {
-                            if (opt !== button) {
-                                opt.classList.add("hidden");
-                            }
-                        });
-
-                        // Show square footage container
-                        const sqftContainer = document.querySelector(
-                            ".square-footage-container"
-                        );
-                        sqftContainer.classList.add("visible");
-
-                        // Update progress to step 2
-                        const progressBar = document.querySelector(".progress-bar");
-                        const stepNumbers = document.querySelectorAll(".step-number");
-
-                        progressBar.style.width = "33%";
-                        stepNumbers[0].classList.add("completed");
-                        stepNumbers[1].classList.add("current");
-
-                        // Calculate price
-                        calculatePrice();
-                    }
-
-                    function calculatePrice() {
-                        const material = document.getElementById("material").value;
-                        const sqft =
-                            parseFloat(document.getElementById("sqft").value) || 1;
-
-                        const prices = {
-                            Marble: 75,
-                            Granite: 65,
-                            Quartz: 70,
-                            Remnants: 55,
-                        };
-
-                        if (material && sqft > 0) {
-                            const basePrice = prices[material] * sqft;
-                            const totalPrice = basePrice.toFixed(2);
-
-                            document.getElementById("price").textContent = totalPrice;
-                            document.getElementById("lightbox-price").textContent =
-                                totalPrice;
-
-                            // Show price container only if both material and sqft are selected
-                            document
-                                .getElementById("est-price-container")
-                                .classList.remove("hidden");
-                        } else {
-                            document.getElementById("price").textContent = "0.00";
-                            document.getElementById("lightbox-price").textContent = "0.00";
-                            document
-                                .getElementById("est-price-container")
-                                .classList.add("hidden");
-                        }
-                    }
-
-                    function goBack() {
-                        // Show all material options
-                        document.querySelectorAll(".material-option").forEach((opt) => {
-                            opt.classList.remove("hidden", "selected");
-                        });
-
-                        // Hide back buttons
-                        document.getElementById("backButton").classList.add("hidden");
-                        document
-                            .getElementById("mobileBackButton")
-                            .classList.add("hidden");
-
-                        // Show hint text again
-                        document.getElementById("hintText").classList.remove("hidden");
-
-                        // Reset material options container
-                        const container = document.querySelector(
-                            ".material-options-container"
-                        );
-                        container.classList.remove("collapsed");
-
-                        // Hide square footage container
-                        const sqftContainer = document.querySelector(
-                            ".square-footage-container"
-                        );
-                        sqftContainer.classList.remove("visible");
-
-                        // Hide price container
-                        document
-                            .getElementById("est-price-container")
-                            .classList.add("hidden");
-
-                        // Reset progress
-                        const progressBar = document.querySelector(".progress-bar");
-                        const stepNumbers = document.querySelectorAll(".step-number");
-
-                        // reset progress bar value
-
-                        progressBar.style.width = "0%";
-                        stepNumbers[0].classList.remove("completed");
-                        stepNumbers[1].classList.remove("current");
-                        stepNumbers[1].classList.remove("completed");
-                        stepNumbers[2].classList.remove("current");
-                        stepNumbers[2].classList.remove("completed");
-
-                        // Reset material input
-                        document.getElementById("material").value = "";
-
-                        // Reset price
-                        calculatePrice();
-                    }
-                </script>
-
-                <!-- Add a hint text above the material selection -->
-                <div class="text-center mb-6 mt-4" id="hintText">
-                    <p class="text-lg text-gray-600 animate-pulse transition-all duration-300 cursor-pointer">
-                        <i class="fas fa-hand-pointer mr-2"></i>
-                        Click on a material to get started
-                    </p>
-                </div>
-
-
-                <!-- Square Footage Container -->
-                <div class="square-footage-container mt-4">
-                    <div class="text-center mb-6">
-                        <h3 class="text-xl font-semibold text-gray-900">
-                            Enter Your Square Footage
-                        </h3>
-                        <p class="text-gray-600">Slide or type your countertop area</p>
-                    </div>
-
-                    <div class="flex items-center gap-4 max-w-md mx-auto">
-                        <!-- Range Input (Slider) -->
-                        <input type="range" id="sqft-range" min="1" max="500" value="1" class="w-full cursor-pointer"
-                            oninput="updateSquareFootage(this.value)" />
-
-                        <!-- Number Input (Displays Selected Value) -->
-                        <input type="number" id="sqft" min="1" max="500" value="1" required
-                            class="w-20 p-2 border rounded-md text-center" oninput="updateSquareFootage(this.value)" />
-                    </div>
-                </div>
-
-                <!-- Price Display Section -->
-                <div id="est-price-container" class="mt-8 text-center hidden flex flex-col items-center justify-center gap-4">
-                    <div
-                        class="max-w-md mx-auto bg-gradient-to-br from-[#78551b] to-[#98753a] rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-102">
-                        <div class="p-8">
-                            <h3 class="text-2xl font-bold text-white mb-4 drop-shadow-lg">
-                                Your Estimated Price
-                            </h3>
-                            <div class="flex items-center justify-center gap-2 mb-6">
-                                <span class="text-5xl font-bold text-white drop-shadow-lg" id="price">0.00</span>
-                                <span class="text-white text-xl drop-shadow-lg">(Installed)</span>
-                            </div>
-                            <div class="bg-black/20 backdrop-blur-sm rounded-xl p-6 mb-6">
-                                <div class="flex items-center gap-4">
-                                    <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
-                                        <i class="fas fa-info-circle text-2xl text-white"></i>
-                                    </div>
-                                    <p class="text-white text-left drop-shadow-lg">
-                                        <strong class="text-white">Note:</strong> The price
-                                        provided is based on base-level materials and
-                                        installation. Final pricing may vary depending on stone
-                                        selection, stone quality, and Washington state taxes.
-                                    </p>
-                                </div>
-                            </div>
-                            <button id="get-quote-btn"
-                                class="w-full bg-white text-[#78551b] px-8 py-4 rounded-xl font-bold text-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center gap-3"
-                                onclick="showBookingSection()">
-                                <i class="fas fa-calendar-check text-xl"></i>
-                                <span>Book Free In-Home Consultation</span>
-                            </button>
-                        </div>
-                    </div>
-                    <button
-                    class="hidden w-[300px] h-[40px] bg-white text-theme-color border-2 border-theme-color px-4 py-2 rounded-lg font-semibold hover:bg-theme-color transition-all duration-300 transform hover:-translate-x-1"
-                    id="backButton" onclick="goBack()">
-                    <i class="fas fa-arrow-left mr-2"></i>
-                    Back to Materials
-                </button>
-                </div>
-
-                <style>
-                    #est-price-container {
-                        animation: fadeInUp 0.5s ease-out;
-                    }
-
-                    @keyframes fadeInUp {
-                        from {
-                            opacity: 0;
-                            transform: translateY(20px);
-                        }
-
-                        to {
-                            opacity: 1;
-                            transform: translateY(0);
-                        }
-                    }
-
-                    #price {
-                        animation: pricePulse 0.5s ease-out;
-                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-                    }
-
-                    @keyframes pricePulse {
-                        0% {
-                            transform: scale(1);
-                        }
-
-                        50% {
-                            transform: scale(1.1);
-                        }
-
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-
-                    #get-quote-btn {
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-                    }
-
-                    #get-quote-btn:hover {
-                        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-                    }
-
-                    .drop-shadow-lg {
-                        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-                    }
-                </style>
-
-                <script>
-                    function updateSquareFootage(value) {
-                        // Update both inputs
-                        document.getElementById("sqft-range").value = value;
-                        document.getElementById("sqft").value = value;
-
-                        // Calculate price
-                        calculatePrice();
-
-                        // Show price container if material is selected
-                        const material = document.getElementById("material").value;
-                        if (material && value > 0) {
-                            document
-                                .getElementById("est-price-container")
-                                .classList.remove("hidden");
-                        } else {
-                            document
-                                .getElementById("est-price-container")
-                                .classList.add("hidden");
-                        }
-                    }
-
-                    function calculatePrice() {
-                        const material = document.getElementById("material").value;
-                        const sqft =
-                            parseFloat(document.getElementById("sqft").value) || 1;
-
-                        const prices = {
-                            Marble: 75,
-                            Granite: 65,
-                            Quartz: 70,
-                            Remnants: 55,
-                        };
-
-                        if (material && sqft > 0) {
-                            const basePrice = prices[material] * sqft;
-                            const totalPrice = basePrice.toFixed(2);
-
-                            document.getElementById("price").textContent = totalPrice;
-                            document.getElementById("lightbox-price").textContent =
-                                totalPrice;
-                        } else {
-                            document.getElementById("price").textContent = "0.00";
-                            document.getElementById("lightbox-price").textContent = "0.00";
-                        }
-                    }
-                </script>
-
-                <!-- Lightbox for Price Thumb -->
-                <div class="fixed inset-0 my-0 hidden bg-black bg-opacity-80 flex justify-center items-center z-50">
-                    <span id="close-price-lightbox"
-                        class="absolute top-5 right-5 text-white text-3xl cursor-pointer">&times;</span>
-                    <div class="category-card bg-white p-6 rounded-lg shadow-lg max-w-md text-center bg-theme-color">
-                        <h2 class="text-xl font-bold text-white">Estimated Price</h2>
-                        <p class="text-white font-semibold mt-2">
-                            Estimated Price: $<span id="lightbox-price">0.00</span>
-                            (Installed)
-                        </p>
-                        <p class="text-sm text-white mt-2">
-                            <strong>Note:</strong> The price provided is based on base-level
-                            materials and installation. Final pricing may vary depending on
-                            stone quality, and Washington state taxes. For a precise and
-                            personalized quote, book a free in-house consultation today.
-                        </p>
-                        <button type="button" id="finalizeEstimateBtn"
-                            class="cta-button w-full mt-4 bg-theme-color text-white py-2 rounded-md hover:bg-theme-color transition duration-300"
-                            onclick="document.querySelector('.booking-container').classList.add('visible')">
-                            Book Free Consultation
-                        </button>
-                    </div>
-                </div>
-            </div>
+        class="bg-gradient-to-br from-gray-50 to-gray-100 py-16 relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div
+          class="absolute top-0 left-0 w-64 h-64 bg-theme-color/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2">
         </div>
+        <div
+          class="absolute bottom-0 right-0 w-64 h-64 bg-theme-color/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <!-- Back Button -->
+
+
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
+              Get Your Instant Quote
+            </h2>
+            <p class="text-xl text-gray-600 animate-fade-in-up">
+              Select your material and size to get started
+            </p>
+            <div class="flex items-center justify-center gap-2 text-sm text-gray-500 mt-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-theme-color" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <span>No obligation quote</span>
+              <span class="text-gray-300">•</span>
+              <span>100% Free</span>
+            </div>
+          </div>
+
+          <!-- Progress Indicator -->
+          <div class="flex justify-between items-center mb-12 mt-4 max-w-2xl mx-auto relative">
+            <div class="absolute top-1/2 left-0 w-full h-2 bg-gray-200 rounded-full -translate-y-1/2 overflow-hidden">
+              <div
+                class="absolute top-0 left-0 h-full bg-gradient-to-r from-theme-color to-theme-color/80 transition-all duration-500 ease-out progress-bar">
+              </div>
+            </div>
+
+            <div
+              class="step-number relative z-10 flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110">
+              <div
+                class="w-12 h-8 absolute -top-[44px] rounded-full bg-white border-2 border-theme-color text-theme-color flex items-center justify-center text-xl font-bold mb-2 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                1
+              </div>
+              <span
+                class="absolute -bottom-[27px] text-sm font-medium text-gray-600 group-hover:text-theme-color transition-colors duration-300">Material</span>
+            </div>
+
+            <div
+              class="step-number relative z-10 flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110">
+              <div
+                class="w-12 h-8 absolute -top-[44px] rounded-full bg-white border-2 border-theme-color text-gray-400 flex items-center justify-center text-xl font-bold mb-2 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                2
+              </div>
+              <span
+                class="absolute -bottom-[27px] text-sm font-medium text-gray-400 group-hover:text-theme-color transition-colors duration-300">Size</span>
+            </div>
+
+            <div
+              class="step-number relative z-10 flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110">
+              <div
+                class="w-12 h-8 absolute -top-[44px] rounded-full bg-white border-2 border-theme-color text-gray-400 flex items-center justify-center text-xl font-bold mb-2 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                3
+              </div>
+              <span
+                class="absolute -bottom-[27px] text-sm font-medium text-gray-400 group-hover:text-theme-color transition-colors duration-300">Book</span>
+            </div>
+          </div>
+
+          <style>
+            .step-number.current {
+              animation: pulse 2s infinite;
+            }
+
+            .step-number.completed {
+              background: linear-gradient(135deg, #78551b, #98753a);
+              color: white;
+              border-color: transparent;
+            }
+
+            .step-number.completed .w-12 {
+              background: linear-gradient(135deg, #78551b, #98753a);
+              color: white;
+              border-color: transparent;
+            }
+
+            .step-number.completed span {
+              color: #78551b;
+              font-weight: 600;
+            }
+
+            @keyframes pulse {
+              0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(203, 169, 111, 0.4);
+              }
+
+              70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(203, 169, 111, 0);
+              }
+
+              100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(203, 169, 111, 0);
+              }
+            }
+
+            .progress-bar {
+              transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+              background: linear-gradient(135deg, #78551b, #98753a);
+            }
+          </style>
+
+          <script>
+            function updateProgress(step) {
+              const progressBar = document.querySelector(".progress-bar");
+              const stepNumbers = document.querySelectorAll(".step-number");
+
+              // Update progress bar width
+              const progress = (step / 3) * 100;
+              progressBar.style.width = `${progress}%`;
+
+              // Update step numbers
+              stepNumbers.forEach((stepNumber, index) => {
+                const numberDiv = stepNumber.querySelector(".w-12");
+                const textSpan = stepNumber.querySelector("span");
+
+                if (index < step) {
+                  // Completed steps
+                  stepNumber.classList.add("completed");
+                  stepNumber.classList.remove("current");
+                  numberDiv.classList.add("completed");
+                  textSpan.classList.add("completed");
+                } else if (index === step) {
+                  // Current step
+                  stepNumber.classList.add("current");
+                  stepNumber.classList.remove("completed");
+                  numberDiv.classList.add("current");
+                  numberDiv.classList.remove("completed");
+                  textSpan.classList.add("current");
+                  textSpan.classList.remove("completed");
+                } else {
+                  // Upcoming steps
+                  stepNumber.classList.remove("current", "completed");
+                  numberDiv.classList.remove("current", "completed");
+                  textSpan.classList.remove("current", "completed");
+                }
+              });
+            }
+          </script>
+
+          <!-- Material Selection -->
+          <div class="material-options-container">
+            <!-- Hidden input for material selection -->
+            <input type="hidden" id="material" name="material" value="" />
+
+            <button
+              class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
+              data-value="Remnants" data-price="55" onclick="selectMaterial(this)">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i class="fas fa-cut text-3xl text-theme-color"></i>
+                </div>
+                <h3
+                  class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
+                  Remnants
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Quality materials at great value
+                </p>
+                <div class="text-2xl font-bold text-theme-color">$55/sqft</div>
+                <div
+                  class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i class="fas fa-arrow-right text-lg"></i>
+                </div>
+              </div>
+            </button>
+
+            <button
+              class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
+              data-value="Granite" data-price="65" onclick="selectMaterial(this)">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i class="fas fa-gem text-3xl text-theme-color"></i>
+                </div>
+                <h3
+                  class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
+                  Granite
+                </h3>
+                <p class="text-gray-600 mb-4">Natural beauty and durability</p>
+                <div class="text-2xl font-bold text-theme-color">$65/sqft</div>
+                <div
+                  class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i class="fas fa-arrow-right text-lg"></i>
+                </div>
+              </div>
+            </button>
+
+            <button
+              class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
+              data-value="Quartz" data-price="70" onclick="selectMaterial(this)">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i class="fas fa-cube text-3xl text-theme-color"></i>
+                </div>
+                <h3
+                  class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
+                  Quartz
+                </h3>
+                <p class="text-gray-600 mb-4">Modern and low maintenance</p>
+                <div class="text-2xl font-bold text-theme-color">$70/sqft</div>
+                <div
+                  class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i class="fas fa-arrow-right text-lg"></i>
+                </div>
+              </div>
+            </button>
+
+            <button
+              class="material-option group relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-theme-color"
+              data-value="Marble" data-price="80" onclick="selectMaterial(this)">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-theme-color/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+              <div class="relative z-10">
+                <div
+                  class="w-16 h-16 bg-theme-color/10 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <i class="fas fa-mountain text-3xl text-theme-color"></i>
+                </div>
+                <h3
+                  class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-theme-color transition-colors duration-300">
+                  Marble
+                </h3>
+                <p class="text-gray-600 mb-4">Luxurious and timeless</p>
+                <div class="text-2xl font-bold text-theme-color">$80/sqft</div>
+                <div
+                  class="absolute bottom-4 right-4 text-theme-color opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <i class="fas fa-arrow-right text-lg"></i>
+                </div>
+              </div>
+            </button>
+            <div>
+            </div>
+
+          </div>
+
+          <script>
+            function selectMaterial(button) {
+              // Remove selected class from all options
+              document.querySelectorAll(".material-option").forEach((opt) => {
+                opt.classList.remove("selected");
+              });
+
+              // Add selected class to clicked option
+              button.classList.add("selected");
+
+              // Update hidden input
+              document.getElementById("material").value = button.dataset.value;
+
+              // Show back buttons
+              document.getElementById("backButton").style.display = "block";
+
+              // Hide hint text
+              document.getElementById("hintText").classList.add("hidden");
+
+              // Collapse material options container
+              const container = document.querySelector(
+                ".material-options-container"
+              );
+              container.classList.add("collapsed");
+
+              // Hide other material options
+              document.querySelectorAll(".material-option").forEach((opt) => {
+                if (opt !== button) {
+                  opt.classList.add("hidden");
+                }
+              });
+
+              // Show square footage container
+              const sqftContainer = document.querySelector(
+                ".square-footage-container"
+              );
+              sqftContainer.classList.add("visible");
+
+              // Update progress to step 2
+              const progressBar = document.querySelector(".progress-bar");
+              const stepNumbers = document.querySelectorAll(".step-number");
+
+              progressBar.style.width = "33%";
+              stepNumbers[0].classList.add("completed");
+              stepNumbers[1].classList.add("current");
+
+              // Calculate price
+              calculatePrice();
+            }
+
+            function calculatePrice() {
+              const material = document.getElementById("material").value;
+              const sqft =
+                parseFloat(document.getElementById("sqft").value) || 1;
+
+              const prices = {
+                Marble: 75,
+                Granite: 65,
+                Quartz: 70,
+                Remnants: 55,
+              };
+
+              if (material && sqft > 0) {
+                const basePrice = prices[material] * sqft;
+                const totalPrice = basePrice.toFixed(2);
+
+                document.getElementById("price").textContent = totalPrice;
+                document.getElementById("lightbox-price").textContent =
+                  totalPrice;
+
+                // Show price container only if both material and sqft are selected
+                document
+                  .getElementById("est-price-container")
+                  .classList.remove("hidden");
+              } else {
+                document.getElementById("price").textContent = "0.00";
+                document.getElementById("lightbox-price").textContent = "0.00";
+                document
+                  .getElementById("est-price-container")
+                  .classList.add("hidden");
+              }
+            }
+
+            function goBack() {
+              // Show all material options
+              document.querySelectorAll(".material-option").forEach((opt) => {
+                opt.classList.remove("hidden", "selected");
+              });
+
+              // Hide back buttons
+              document.getElementById("backButton").classList.add("hidden");
+              document
+                .getElementById("mobileBackButton")
+                .classList.add("hidden");
+
+              // Show hint text again
+              document.getElementById("hintText").classList.remove("hidden");
+
+              // Reset material options container
+              const container = document.querySelector(
+                ".material-options-container"
+              );
+              container.classList.remove("collapsed");
+
+              // Hide square footage container
+              const sqftContainer = document.querySelector(
+                ".square-footage-container"
+              );
+              sqftContainer.classList.remove("visible");
+
+              // Hide price container
+              document
+                .getElementById("est-price-container")
+                .classList.add("hidden");
+
+              // Reset progress
+              const progressBar = document.querySelector(".progress-bar");
+              const stepNumbers = document.querySelectorAll(".step-number");
+
+              // reset progress bar value
+
+              progressBar.style.width = "0%";
+              stepNumbers[0].classList.remove("completed");
+              stepNumbers[1].classList.remove("current");
+              stepNumbers[1].classList.remove("completed");
+              stepNumbers[2].classList.remove("current");
+              stepNumbers[2].classList.remove("completed");
+
+              // Reset material input
+              document.getElementById("material").value = "";
+
+              // Reset price
+              calculatePrice();
+            }
+          </script>
+
+          <!-- Add a hint text above the material selection -->
+          <div class="text-center mb-6 mt-4" id="hintText">
+            <p class="text-lg text-gray-600 animate-pulse transition-all duration-300 cursor-pointer">
+              <i class="fas fa-hand-pointer mr-2"></i>
+              Click on a material to get started
+            </p>
+          </div>
+
+
+          <!-- Square Footage Container -->
+          <div class="square-footage-container mt-4">
+            <div class="text-center mb-6">
+              <h3 class="text-xl font-semibold text-gray-900">
+                Enter Your Square Footage
+              </h3>
+              <p class="text-gray-600">Slide or type your countertop area</p>
+            </div>
+
+            <div class="flex items-center gap-4 max-w-md mx-auto">
+              <!-- Range Input (Slider) -->
+              <input type="range" id="sqft-range" min="1" max="500" value="1" class="w-full cursor-pointer"
+                oninput="updateSquareFootage(this.value)" />
+
+              <!-- Number Input (Displays Selected Value) -->
+              <input type="number" id="sqft" min="1" max="500" value="1" required
+                class="w-20 p-2 border rounded-md text-center" oninput="updateSquareFootage(this.value)" />
+            </div>
+          </div>
+
+          <!-- Price Display Section -->
+          <div id="est-price-container" class="mt-8 text-center hidden flex flex-col items-center justify-center gap-4">
+            <div
+              class="max-w-md mx-auto bg-gradient-to-br from-[#78551b] to-[#98753a] rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-102">
+              <div class="p-8">
+                <h3 class="text-2xl font-bold text-white mb-4 drop-shadow-lg">
+                  Your Estimated Price
+                </h3>
+                <div class="flex items-center justify-center gap-2 mb-6">
+                  <span class="text-5xl font-bold text-white drop-shadow-lg" id="price">0.00</span>
+                  <span class="text-white text-xl drop-shadow-lg">(Installed)</span>
+                </div>
+                <div class="bg-black/20 backdrop-blur-sm rounded-xl p-6 mb-6">
+                  <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
+                      <i class="fas fa-info-circle text-2xl text-white"></i>
+                    </div>
+                    <p class="text-white text-left drop-shadow-lg">
+                      <strong class="text-white">Note:</strong> The price
+                      provided is based on base-level materials and
+                      installation. Final pricing may vary depending on stone
+                      selection, stone quality, and Washington state taxes.
+                    </p>
+                  </div>
+                </div>
+                <button id="get-quote-btn"
+                  class="w-full bg-white text-[#78551b] px-8 py-4 rounded-xl font-bold text-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center gap-3"
+                  onclick="showBookingSection()">
+                  <i class="fas fa-calendar-check text-xl"></i>
+                  <span>Book Free In-Home Consultation</span>
+                </button>
+              </div>
+            </div>
+            <button
+              class="hidden w-[300px] h-[40px] bg-white text-theme-color border-2 border-theme-color px-4 py-2 rounded-lg font-semibold hover:bg-theme-color transition-all duration-300 transform hover:-translate-x-1"
+              id="backButton" onclick="goBack()">
+              <i class="fas fa-arrow-left mr-2"></i>
+              Back to Materials
+            </button>
+          </div>
+
+          <style>
+            #est-price-container {
+              animation: fadeInUp 0.5s ease-out;
+            }
+
+            @keyframes fadeInUp {
+              from {
+                opacity: 0;
+                transform: translateY(20px);
+              }
+
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+
+            #price {
+              animation: pricePulse 0.5s ease-out;
+              text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            }
+
+            @keyframes pricePulse {
+              0% {
+                transform: scale(1);
+              }
+
+              50% {
+                transform: scale(1.1);
+              }
+
+              100% {
+                transform: scale(1);
+              }
+            }
+
+            #get-quote-btn {
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            }
+
+            #get-quote-btn:hover {
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            }
+
+            .drop-shadow-lg {
+              text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            }
+          </style>
+
+          <script>
+            function updateSquareFootage(value) {
+              // Update both inputs
+              document.getElementById("sqft-range").value = value;
+              document.getElementById("sqft").value = value;
+
+              // Calculate price
+              calculatePrice();
+
+              // Show price container if material is selected
+              const material = document.getElementById("material").value;
+              if (material && value > 0) {
+                document
+                  .getElementById("est-price-container")
+                  .classList.remove("hidden");
+              } else {
+                document
+                  .getElementById("est-price-container")
+                  .classList.add("hidden");
+              }
+            }
+
+            function calculatePrice() {
+              const material = document.getElementById("material").value;
+              const sqft =
+                parseFloat(document.getElementById("sqft").value) || 1;
+
+              const prices = {
+                Marble: 75,
+                Granite: 65,
+                Quartz: 70,
+                Remnants: 55,
+              };
+
+              if (material && sqft > 0) {
+                const basePrice = prices[material] * sqft;
+                const totalPrice = basePrice.toFixed(2);
+
+                document.getElementById("price").textContent = totalPrice;
+                document.getElementById("lightbox-price").textContent =
+                  totalPrice;
+              } else {
+                document.getElementById("price").textContent = "0.00";
+                document.getElementById("lightbox-price").textContent = "0.00";
+              }
+            }
+          </script>
+
+          <!-- Lightbox for Price Thumb -->
+          <div class="fixed inset-0 my-0 hidden bg-black bg-opacity-80 flex justify-center items-center z-50">
+            <span id="close-price-lightbox"
+              class="absolute top-5 right-5 text-white text-3xl cursor-pointer">&times;</span>
+            <div class="category-card bg-white p-6 rounded-lg shadow-lg max-w-md text-center bg-theme-color">
+              <h2 class="text-xl font-bold text-white">Estimated Price</h2>
+              <p class="text-white font-semibold mt-2">
+                Estimated Price: $<span id="lightbox-price">0.00</span>
+                (Installed)
+              </p>
+              <p class="text-sm text-white mt-2">
+                <strong>Note:</strong> The price provided is based on base-level
+                materials and installation. Final pricing may vary depending on
+                stone quality, and Washington state taxes. For a precise and
+                personalized quote, book a free in-house consultation today.
+              </p>
+              <button type="button" id="finalizeEstimateBtn"
+                class="cta-button w-full mt-4 bg-theme-color text-white py-2 rounded-md hover:bg-theme-color transition duration-300"
+                onclick="document.querySelector('.booking-container').classList.add('visible')">
+                Book Free Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Popup for Free Consultation -->
       <div class="z-[100] hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-2">
@@ -4317,11 +4307,11 @@
       </div>
 
       <button
-      class="md:hidden absolute top-4 left-4 bg-white text-theme-color border-2 border-theme-color px-4 py-2 rounded-lg font-semibold hover:bg-theme-color hover:text-white transition-all duration-300 transform hover:-translate-x-1 hidden"
-      id="mobileBackButton" onclick="goBack()">
-      <i class="fas fa-arrow-left mr-2"></i>
-      Back to Materials
-  </button>
+        class="md:hidden absolute top-4 left-4 bg-white text-theme-color border-2 border-theme-color px-4 py-2 rounded-lg font-semibold hover:bg-theme-color hover:text-white transition-all duration-300 transform hover:-translate-x-1 hidden"
+        id="mobileBackButton" onclick="goBack()">
+        <i class="fas fa-arrow-left mr-2"></i>
+        Back to Materials
+      </button>
 
       <!-- Visit Our Showroom Section -->
       <section class="py-16 bg-white">
@@ -4534,24 +4524,28 @@
     <style>
       /* Add Lightbox Styles */
       .animate-enter {
-        animation: enter 0.5s ease-out;
-      }
+        animation: enter 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        opacity: 0;
+        transform: scale(0.8);
+    }
 
-      .animate-enter-delay {
-        animation: enter 0.5s ease-out 0.2s both;
-      }
+    .animate-enter-delay {
+        animation: enter 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s forwards;
+        opacity: 0;
+        transform: scale(0.8);
+    }
 
-      @keyframes enter {
-        from {
+    @keyframes enter {
+      0% {
           opacity: 0;
-          transform: translateY(10px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+          transform: scale(0.8);
       }
+
+      100% {
+          opacity: 1;
+          transform: scale(1);
+      }
+  }
 
       /* Add hover effect to material images */
       .material-image {
@@ -4722,7 +4716,7 @@
             </p>
             <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
               <i class="fas fa-phone mr-3 text-theme-color"></i>
-               +1 (786) 722 4444
+              +1 (786) 722 4444
             </p>
           </div>
         </div>
@@ -5154,6 +5148,29 @@
           toggleQuartzOptions();
         }
       });
+
+     // close marbleOptions, graniteOptions, quartzOptions in one function
+     function closeAllOptions() {
+      closeMarbleOptions();
+      closeGraniteOptions();
+      closeQuartzOptions();
+     }
+
+     function closeMarbleOptions() {
+      const marbleOptions = document.getElementById("marbleOptions");
+      marbleOptions.classList.add("hidden");
+     }
+
+     function closeGraniteOptions() {
+      const graniteOptions = document.getElementById("graniteOptions");
+      graniteOptions.classList.add("hidden");
+     }
+
+     function closeQuartzOptions() {
+      const quartzOptions = document.getElementById("quartzOptions");
+      quartzOptions.classList.add("hidden");
+     }
+
   </script>
 
   <!-- Get estimate price section -->
@@ -5728,7 +5745,7 @@
     <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl mx-4">
       <div class="relative w-full h-[30vh] perspective-1000 flex items-center justify-center animate-enter">
         <div id="rotating-container"
-          class="relative w-full h-full transform-style-3d transition-transform duration-1000">
+          class="relative w-full h-full transform-style-3d transition-transform duration-200">
           <!-- Front side -->
           <div class="absolute w-full h-full backface-hidden">
             <img id="marbleLightboxImage"
@@ -5747,11 +5764,12 @@
         <h2 id="marbleLightboxTitle" class="text-2xl font-bold"></h2>
         <p id="marbleLightboxDescription" class="mt-2 text-lg"></p>
         <div class="flex flex-col items-center space-y-4">
-          <button
-            class="bg-gradient-to-r from-[#78551b] to-[#cba96f] text-white px-8 py-3 rounded-full hover:from-[#cba96f] hover:to-[#78551b] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2">
-            <i class="fas fa-calculator"></i>
-            <span>Calculate Price</span>
-          </button>
+          <a href="#get-estimate-price-section"
+            onclick="document.getElementById('get-estimate-price-section').scrollIntoView({ behavior: 'smooth', block: 'start' }); closeMarbleLightbox(); closeAllOptions()"
+            class="bg-gradient-to-r mt-8 from-[#78551b] to-[#cba96f] text-white px-8 py-3 rounded-full hover:from-[#cba96f] hover:to-[#78551b] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center space-x-2">
+            
+            <span>Get Quote</span>
+          </a>
           <p class="text-sm text-gray-400">
             Click to estimate your countertop cost
           </p>
@@ -6049,4 +6067,3 @@
 </body>
 
 </html>
-
