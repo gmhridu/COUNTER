@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Counter Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --gold-1: #cba96f;
+            --gold-2: #e2c992;
+            --gold-3: #b89355;
+            --gold-4: #d4af37;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(270deg, var(--gold-1), var(--gold-2), var(--gold-3), var(--gold-4));
+            background-size: 300% 300%;
+            animation: gradient-shift 8s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .form-input:focus {
+            border-color: var(--gold-1);
+            box-shadow: 0 0 0 3px rgba(203, 169, 111, 0.1);
+        }
+
+        .contact-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .floating-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .form-input:focus + .floating-label,
+        .form-input:not(:placeholder-shown) + .floating-label {
+            transform: translateY(-1.5rem) scale(0.8);
+            color: var(--gold-1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+     <nav class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden">
+        <div class="sparkle-container"></div>
+        <div class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]">
+                <!-- Logo -->
+                <a href="./index.html" class="text-2xl font-bold text-theme-color hover:text-white transition w-14">
+                    <img src="Images/Countertops-Logo.png" alt="CounterTops Logo" />
+                </a>
+
+                <!-- Menu for large screens -->
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="./index.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
+                        aria-label="Go to Home Page">
+                        <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
+                        <p class="text-theme-color">Home</p>
+                    </a>
+                    <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
+                        aria-label="View Showroom Page">
+                        <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
+                        <p class="text-theme-color">Showroom</p>
+                    </a>
+                    <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
+                        aria-label="Explore Portfolio">
+                        <i class="fas fa-briefcase mr-2 text-black" aria-hidden="true"></i>
+                        <p class="text-theme-color">Portfolio</p>
+                    </a>
+                    <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
+                        aria-label="About Us">
+                        <i class="fas fa-info-circle mr-2 text-black" aria-hidden="true"></i>
+                        <p class="text-theme-color">About Us</p>
+                    </a>
+                    <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
+                        aria-label="View FAQ">
+                        <i class="fas fa-question-circle mr-2 text-black" aria-hidden="true"></i>
+                        <p class="text-theme-color">FAQ</p>
+                    </a>
+                    <a href="./CareTips.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
+                        aria-label="View Care Tips">
+                        <i class="fas fa-hand-sparkles mr-2 text-black" aria-hidden="true"></i>
+                        <p class="text-theme-color">Care Tips</p>
+                    </a>
+                    <a href="./Contact.html" class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded transition flex items-center"
+                        aria-label="Contact Us">
+                        <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
+                        <p class="text-theme-color">Contact</p>
+                    </a>
+                    <a href="#get-estimate-price-section"
+                        class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition"
+                        aria-label="Get a Quote">
+                        <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden flex flex-col bg-black p-4 space-y-3 my-2">
+                <a href="./index.html" class="hover:text-theme-color py-2 rounded flex items-center"
+                    aria-label="Go to Home Page">
+                    <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
+                    <p class="text-theme-color">Home</p>
+                </a>
+                <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded flex items-center"
+                    aria-label="View Showroom Page">
+                    <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
+                    <p class="text-theme-color">Showroom</p>
+                </a>
+                <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded flex items-center"
+                    aria-label="Explore Portfolio">
+                    <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
+                    <p class="text-theme-color">Portfolio</p>
+                </a>
+                <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded flex items-center"
+                    aria-label="About Us">
+                    <i class="fas fa-info-circle mr-2 text-white" aria-hidden="true"></i>
+                    <p class="text-theme-color">About Us</p>
+                </a>
+                <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded flex items-center"
+                    aria-label="View FAQ">
+                    <i class="fas fa-question-circle mr-2 text-white" aria-hidden="true"></i>
+                    <p class="text-theme-color">FAQ</p>
+                </a>
+                <a href="./CareTips.html" class="hover:text-theme-color py-2 rounded flex items-center"
+                    aria-label="View Care Tips">
+                    <i class="fas fa-hand-sparkles mr-2 text-white" aria-hidden="true"></i>
+                    <p class="text-theme-color">Care Tips</p>
+                </a>
+                <a href="./Contact.html" class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded flex items-center"
+                    aria-label="Contact Us">
+                    <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
+                    <p class="text-theme-color">Contact</p>
+                </a>
+                <a href="#get-estimate-price-section"
+                    class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center"
+                    aria-label="Get a Quote">
+                    <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+                </a>
+            </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-br from-gray-900 to-black">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">Get in touch with our team for a free consultation and discover how we can transform your space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="relative">
+                            <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder=" ">
+                            <label for="name" class="floating-label text-gray-500">Your Name</label>
+                        </div>
+                        <div class="relative">
+                            <input type="email" id="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder=" ">
+                            <label for="email" class="floating-label text-gray-500">Email Address</label>
+                        </div>
+                        <div class="relative">
+                            <input type="tel" id="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder=" ">
+                            <label for="phone" class="floating-label text-gray-500">Phone Number</label>
+                        </div>
+                        <div class="relative">
+                            <select id="subject" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
+                                <option value="">Select a Subject</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="consultation">Schedule Consultation</option>
+                                <option value="question">General Question</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="relative">
+                            <textarea id="message" rows="4" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder=" "></textarea>
+                            <label for="message" class="floating-label text-gray-500">Your Message</label>
+                        </div>
+                        <button type="submit" class="w-full bg-theme-color text-white py-3 rounded-lg font-semibold hover:bg-[#78551b] transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <!-- Contact Cards -->
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="contact-card bg-white rounded-xl shadow-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-theme-color/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-theme-color text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Visit Us</h3>
+                                    <p class="text-gray-600">200 Washington Ave, Burlington, WA 98233</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card bg-white rounded-xl shadow-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-theme-color/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-theme-color text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Call Us</h3>
+                                    <p class="text-gray-600">+1 (360) 777 6361</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card bg-white rounded-xl shadow-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-theme-color/10 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-theme-color text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Email Us</h3>
+                                    <p class="text-gray-600">info@countersolutions.us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Business Hours</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Monday - Friday</span>
+                                <span class="text-gray-900 font-medium">9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="text-gray-900 font-medium">By Appointment</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Sunday</span>
+                                <span class="text-gray-900 font-medium">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.1234567890123!2d-122.3251!3d48.4758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDI4JzMyLjkiTiAxMjLCsDE5JzMwLjQiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black py-16 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]">
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Areas of Service
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <ul class="space-y-2">
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Island County
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Skagit County
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Whatcom County
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Snohomish County
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Our Categories
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <ul class="space-y-2">
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-gem mr-2 text-theme-color"></i>
+                        <a href="Showroom.html#marble-collection">Marble</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-gem mr-2 text-theme-color"></i>
+                        <a href="Showroom.html#granite-collection">Granite</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-gem mr-2 text-theme-color"></i>
+                        <a href="Showroom.html#quartz-collection">Quartz</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Main Menu
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <ul class="space-y-2">
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-home mr-2 text-theme-color"></i>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-store mr-2 text-theme-color"></i>
+                        <a href="./Showroom.html">Showroom</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-briefcase mr-2 text-theme-color"></i>
+                        <a href="./Portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-question-circle mr-2 text-theme-color"></i>
+                        <a href="./FAQ.html">FAQ</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-envelope mr-2 text-theme-color"></i>
+                        <a href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Contact Us
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <div class="space-y-4">
+                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
+                        200 Washington Ave, Burlington, WA 98233
+                    </p>
+                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-phone mr-3 text-theme-color"></i>
+                        +1 (360) 777 6361
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
+            <div class="text-center text-gray-400">
+                <p class="text-sm">&copy; 2025 Counter Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html> 

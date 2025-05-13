@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Solutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .calendar-header {
+        text-align: center;
+        font-weight: 600;
+        color: #666;
+        padding: 0.5rem;
+      }
+
+      .calendar-day {
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
+        transition: all 0.2s;
+        position: relative;
+        z-index: 1;
+      }
+
+      .calendar-day:hover:not(.disabled) {
+        background-color: rgba(120, 85, 27, 0.1);
+        transform: scale(1.05);
+      }
+
+      .calendar-day.selected {
+        background-color: #78551b;
+        color: white;
+        border-color: #78551b;
+      }
+
+      .calendar-day.disabled {
+        color: #9ca3af;
+        cursor: not-allowed;
+        background-color: #f3f4f6;
+        border-color: #e5e7eb;
+      }
+
+      .booking-content {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 1.5rem; /* Adjusted radius */
+        width: 90%;
+        max-width: 649px;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        /* This is the key fix - creates a padding for the scrollbar */
+        padding-right: 0.5rem;
+      }
+
+      /* WebKit scrollbar styles */
+      .booking-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .booking-content::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 1.5rem 0; /* Matches container border-radius */
+      }
+
+      .booking-content::-webkit-scrollbar-thumb {
+        background-color: #c1c1c1;
+        border-radius: 4px;
+        border: 2px solid white; /* Creates gap between thumb and edge */
+      }
+
+      .booking-content::-webkit-scrollbar-thumb:hover {
+        background-color: #a8a8a8;
+      }
+
+      /* Firefox scrollbar */
+      @supports (scrollbar-width: thin) {
+        .booking-content {
+          scrollbar-width: thin;
+          scrollbar-color: #c1c1c1 transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Booking Container -->
+    <div class="booking-container visible">
+      <div class="booking-content">
+        <button class="close-booking" onclick="closeBookingSection()">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="flex items-center justify-center mb-6">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">
+              Book Your Free Consultation
+            </h2>
+            <p class="text-gray-600">
+              Get a personalized quote and expert advice
+            </p>
+          </div>
+        </div>
+
+        <form id="booking-form" class="space-y-6">
+          <div class="form-group">
+            <label class="form-label"
+              >Preferred Date <span class="text-red-500">*</span></label
+            >
+            <div class="calendar-grid">
+              <!-- Calendar headers -->
+              <div class="calendar-header">Sun</div>
+              <div class="calendar-header">Mon</div>
+              <div class="calendar-header">Tue</div>
+              <div class="calendar-header">Wed</div>
+              <div class="calendar-header">Thu</div>
+              <div class="calendar-header">Fri</div>
+              <div class="calendar-header">Sat</div>
+              <!-- Calendar days will be populated by JavaScript -->
+            </div>
+            <input type="hidden" id="selected-date" name="selected-date" />
+            <div
+              id="selected-date-display"
+              class="mt-2 text-theme-color font-medium"
+            ></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="calendar.js"></script>
+  </body>
+</html>
