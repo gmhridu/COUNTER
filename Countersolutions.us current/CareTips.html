@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countertop Care Tips - Counter Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden">
+        <div class="sparkle-container"></div>
+        <div class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]">
+            <!-- Logo -->
+            <a href="./index.html" class="text-2xl font-bold text-theme-color hover:text-white transition w-14 ">
+                <img src="Images/Countertops-Logo.png" alt="CounterTops Logo">
+            </a>
+
+            <!-- Menu for large screens -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="./index.html" class="border-gray-500 border-yellow-400-dark pb-1 hover:text-theme-color transition flex items-center" aria-label="Go to Home Page">
+                    <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
+                    <p class="text-theme-color"> Home</p>
+                </a>
+                
+                <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded transition flex items-center" aria-label="View Showroom Page">
+                    <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
+                    <p class="text-theme-color"> Showroom</p>
+                </a>
+                <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded transition flex items-center" aria-label="Explore Portfolio">
+                    <i class="fas fa-briefcase mr-2 text-black" aria-hidden="true"></i>
+                    <p class="text-theme-color">Portfolio</p>
+                </a>
+                <a href="./AboutUs.html" class="border-b-2 border-theme-color pb-1 hover:text-theme-color transition flex items-center" aria-label="Learn About Us">
+                    <i class="fas fa-info-circle mr-2 text-black" aria-hidden="true"></i>
+                    <p class="text-theme-color"> About Us</p>
+                </a>
+                <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded transition flex items-center" aria-label="View FAQ">
+                    <i class="fas fa-question-circle mr-2 text-black" aria-hidden="true"></i>
+                    <p class="text-theme-color">FAQ</p>
+                </a>
+                <a href="./Contact.html" class="hover:text-theme-color py-2 rounded transition flex items-center" aria-label="Contact Us">
+                    <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
+                    <p class="text-theme-color">Contact</p>
+                </a>
+                <a href="#get-estimate-price-section" class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition" aria-label="Get a Quote">
+                    <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col bg-black p-4 space-y-3 my-2">
+            <a href="./index.html" class="pb-1 hover:text-theme-color flex items-center" aria-label="Go to Home Page">
+                <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
+                <p class="text-theme-color"> Home</p>
+            </a>
+            <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded flex items-center" aria-label="View Showroom Page">
+                <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
+                <p class="text-theme-color">Showroom </p>
+            </a>
+            <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded flex items-center" aria-label="Explore Portfolio">
+                <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
+                <p class="text-theme-color"> Portfolio</p>
+            </a>
+             <a href="./AboutUs.html" class="border-b-2 border-theme-color pb-1 hover:text-theme-color flex items-center" aria-label="Learn About Us">
+                <i class="fas fa-info-circle mr-2 text-white" aria-hidden="true"></i>
+                <p class="text-theme-color"> About Us</p>
+            </a>
+            <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded flex items-center" aria-label="View FAQ">
+                <i class="fas fa-question-circle mr-2 text-white" aria-hidden="true"></i>
+                <p class="text-theme-color">FAQ</p>
+            </a>
+            <a href="./Contact.html" class="hover:text-theme-color py-2 rounded flex items-center" aria-label="Contact Us">
+                <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
+                <p class="text-theme-color">Contact</p>
+            </a>
+            <a href="#get-estimate-price-section" class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center" aria-label="Get a Quote">
+                <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-theme-color text-center mb-8">Countertop Care & Maintenance Tips</h1>
+        
+        <!-- Material-Specific Care Tips -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- Marble Care -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="text-center mb-4">
+                    <i class="fas fa-gem text-3xl text-theme-color mb-2"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">Marble Care</h2>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Clean spills immediately with a soft cloth</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Use pH-neutral cleaners only</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Seal every 6-12 months</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-times text-red-500 mt-1"></i>
+                        <span>Avoid acidic cleaners and vinegar</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Granite Care -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="text-center mb-4">
+                    <i class="fas fa-mountain text-3xl text-theme-color mb-2"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">Granite Care</h2>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Use warm water and mild dish soap</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Seal annually for best protection</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Use cutting boards to prevent scratches</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-times text-red-500 mt-1"></i>
+                        <span>Avoid harsh chemicals and abrasive cleaners</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quartz Care -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="text-center mb-4">
+                    <i class="fas fa-cube text-3xl text-theme-color mb-2"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">Quartz Care</h2>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>No sealing required</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Use mild soap and water for cleaning</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check text-green-500 mt-1"></i>
+                        <span>Stain and heat resistant</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-times text-red-500 mt-1"></i>
+                        <span>Avoid direct heat and harsh chemicals</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- General Care Tips -->
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-theme-color mb-6">General Care Guidelines</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Daily Maintenance</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Wipe spills immediately with a soft cloth</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Use coasters under glasses and cups</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Clean with mild soap and warm water</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Preventive Care</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Use trivets for hot items</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Use cutting boards for food preparation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span>Regularly inspect for damage or wear</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Maintenance -->
+        <div class="bg-theme-color text-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-6">Professional Maintenance</h2>
+            <p class="mb-6">For optimal care and longevity of your countertops, consider our professional maintenance services:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-tools text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Regular Sealing</h3>
+                    <p>Professional sealing to protect your investment</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-magic text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Deep Cleaning</h3>
+                    <p>Specialized cleaning to maintain beauty</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-wrench text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Repair Services</h3>
+                    <p>Expert repair for any damage or wear</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#get-estimate-price-section" class="bg-white text-theme-color px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Schedule Maintenance
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-gray-900 to-black py-16 px-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]">
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Areas of Service
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <ul class="space-y-2">
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Island County
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Skagit County
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Whatcom County
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                        Snohomish County
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Our Categories
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <ul class="space-y-2">
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-gem mr-2 text-theme-color"></i>
+                        <a href="Showroom.html#marble-collection">Marble</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-gem mr-2 text-theme-color"></i>
+                        <a href="Showroom.html#granite-collection">Granite</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-gem mr-2 text-theme-color"></i>
+                        <a href="Showroom.html#quartz-collection">Quartz</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Main Menu
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <ul class="space-y-2">
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-home mr-2 text-theme-color"></i>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-store mr-2 text-theme-color"></i>
+                        <a href="./Showroom.html">Showroom</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-briefcase mr-2 text-theme-color"></i>
+                        <a href="./Portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-info-circle mr-2 text-theme-color"></i>
+                        <a href="./AboutUs.html">About Us</a>
+                    </li>
+                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-envelope mr-2 text-theme-color"></i>
+                        <a href="#get-estimate-price-section">Get Quote</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+                    Contact Us
+                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
+                </h3>
+                <div class="space-y-4">
+                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
+                        200 Washington Ave, Burlington, WA 98233
+                    </p>
+                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
+                        <i class="fas fa-phone mr-3 text-theme-color"></i>
+                        +1 (360) 777 6361
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
+            <div class="text-center text-gray-400">
+                <p class="text-sm">&copy; 2025 Counter Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
