@@ -1,848 +1,1164 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Standard favicon -->
+    <link
+      rel="shortcut icon"
+      href="./Images/Countertops-Logo.png"
+      alt="Counter Solutions - Trusted countertop installer in Burlington, WA USA"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./Images/Countertops-Logo.png" type="image/png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Images/Countertops-Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="./Images/Countertops-Logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Images/Countertops-Logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/Countertops-Logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="./Images/Countertops-Logo.png"
+    />
+
+    <!-- Apple Safari Pinned Tab Icon -->
+    <link
+      rel="mask-icon"
+      href="./Images/Countertops-Logo.png"
+      color="#cba96f"
+    />
+
+    <!-- iOS Safari status bar style -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Frequently Asked Questions - Counter Solutions</title>
-    <meta name="description" content="Find answers to common questions about countertop materials, installation, maintenance, and our services at Counter Solutions.">
-    
+    <meta
+      name="description"
+      content="Find answers to common questions about countertop materials, installation, maintenance, and our services at Counter Solutions."
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
-        :root {
-            --gold-1: #cba96f;
-            --gold-2: #e2c992;
-            --gold-3: #b89355;
-            --gold-4: #d4af37;
-        }
+      :root {
+        --gold-1: #cba96f;
+        --gold-2: #e2c992;
+        --gold-3: #b89355;
+        --gold-4: #d4af37;
+      }
 
-        /* Modern Glassmorphism */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-        }
+      /* Modern Glassmorphism */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+      }
 
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
 
-        /* Enhanced Animations */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
+      /* Enhanced Animations */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
         }
-
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
+        50% {
+          transform: translateY(-10px);
         }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        100% {
+          transform: translateY(0px);
         }
+      }
 
-        .fade-in-up {
-            animation: fadeInUp 0.6s ease-out forwards;
-            opacity: 0;
-            animation-delay: var(--delay, 0s);
+      .float-animation {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-
-        /* Modern FAQ Items */
-        .faq-item {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(203, 169, 111, 0.1);
-            border-radius: 24px;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-bottom: 1.5rem;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.6s ease-out forwards;
-            animation-delay: var(--delay, 0s);
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
+      }
 
-        .faq-item:hover {
-            transform: translateY(-4px) scale(1.01);
-            box-shadow: 0 20px 40px rgba(203, 169, 111, 0.15);
-            border-color: var(--gold-1);
-        }
+      .fade-in-up {
+        animation: fadeInUp 0.6s ease-out forwards;
+        opacity: 0;
+        animation-delay: var(--delay, 0s);
+      }
 
-        .faq-question {
-            padding: 2rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(145deg, #ffffff, #f8f8f8);
-            transition: all 0.3s ease;
-        }
+      /* Modern FAQ Items */
+      .faq-item {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(203, 169, 111, 0.1);
+        border-radius: 24px;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.6s ease-out forwards;
+        animation-delay: var(--delay, 0s);
+      }
 
-        .faq-question:hover {
-            background: linear-gradient(145deg, #f8f8f8, #ffffff);
-        }
+      .faq-item:hover {
+        transform: translateY(-4px) scale(1.01);
+        box-shadow: 0 20px 40px rgba(203, 169, 111, 0.15);
+        border-color: var(--gold-1);
+      }
 
-        .faq-question h3 {
-            font-size: 1.25rem;
-            color: #1a1a1a;
-            transition: color 0.3s ease;
-        }
+      .faq-question {
+        padding: 2rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(145deg, #ffffff, #f8f8f8);
+        transition: all 0.3s ease;
+      }
 
-        .faq-question:hover h3 {
-            color: var(--gold-1);
-        }
+      .faq-question:hover {
+        background: linear-gradient(145deg, #f8f8f8, #ffffff);
+      }
 
-        .faq-icon {
-            transition: transform 0.4s ease;
-            color: var(--gold-1);
-            font-size: 1.25rem;
-        }
+      .faq-question h3 {
+        font-size: 1.25rem;
+        color: #1a1a1a;
+        transition: color 0.3s ease;
+      }
 
-        .faq-question.active .faq-icon {
-            transform: rotate(-180deg);
-        }
+      .faq-question:hover h3 {
+        color: var(--gold-1);
+      }
 
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            background: linear-gradient(145deg, #f8f8f8, #ffffff);
-            padding: 0 2rem;
-        }
+      .faq-icon {
+        transition: transform 0.4s ease;
+        color: var(--gold-1);
+        font-size: 1.25rem;
+      }
 
-        .faq-answer.active {
-            max-height: 500px;
-            padding: 2rem;
-            border-top: 1px solid rgba(203, 169, 111, 0.1);
-        }
+      .faq-question.active .faq-icon {
+        transform: rotate(-180deg);
+      }
 
-        .faq-answer p {
-            line-height: 1.8;
-            color: #4a5568;
-        }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        background: linear-gradient(145deg, #f8f8f8, #ffffff);
+        padding: 0 2rem;
+      }
 
-        /* Enhanced Category Headers */
+      .faq-answer.active {
+        max-height: 500px;
+        padding: 2rem;
+        border-top: 1px solid rgba(203, 169, 111, 0.1);
+      }
+
+      .faq-answer p {
+        line-height: 1.8;
+        color: #4a5568;
+      }
+
+      /* Enhanced Category Headers */
+      .category-header {
+        background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+        border-radius: 24px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 15px 30px rgba(203, 169, 111, 0.15);
+        transform: translateY(0);
+        transition: all 0.3s ease;
+      }
+
+      .category-header:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(203, 169, 111, 0.2);
+      }
+
+      .category-header h2 {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Enhanced Contact CTA */
+      .contact-cta {
+        background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 4rem 2rem;
+        border-radius: 32px;
+        text-align: center;
+        margin-top: 6rem;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(203, 169, 111, 0.2);
+        color: white;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .contact-cta:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+      }
+
+      .contact-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.2rem 3rem;
+        background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+        color: white;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 2px solid transparent;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-button:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 15px 30px rgba(203, 169, 111, 0.3);
+        background: linear-gradient(135deg, var(--gold-2), var(--gold-1));
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
         .category-header {
-            background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
-            border-radius: 24px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 15px 30px rgba(203, 169, 111, 0.15);
-            transform: translateY(0);
-            transition: all 0.3s ease;
-        }
-
-        .category-header:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(203, 169, 111, 0.2);
+          padding: 1.5rem;
         }
 
         .category-header h2 {
-            color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            margin: 0;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          font-size: 1.5rem;
         }
 
-        /* Enhanced Contact CTA */
+        .faq-question {
+          padding: 1.5rem;
+        }
+
+        .faq-answer.active {
+          padding: 1.5rem;
+        }
+
         .contact-cta {
-            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 4rem 2rem;
-            border-radius: 32px;
-            text-align: center;
-            margin-top: 6rem;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(203, 169, 111, 0.2);
-            color: white;
-            transform: translateY(0);
-            transition: all 0.4s ease;
+          padding: 3rem 1.5rem;
+          margin-top: 4rem;
+        }
+      }
+      .loading-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #000000, #1a1a1a);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .loading-container.fade-out {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      #main-content {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in;
+      }
+
+      #main-content.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .loading-logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2rem;
+        animation: pulse 2s infinite;
+      }
+
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(203, 169, 111, 0.2);
+        border-radius: 50%;
+        border-top-color: var(--gold-1);
+        animation: spin 1s linear infinite;
+        position: relative;
+      }
+
+      .loading-spinner::after {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: var(--gold-2);
+        animation: spin 1.5s linear infinite;
+      }
+
+      .loading-spinner::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        right: -6px;
+        bottom: -6px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        border-top-color: var(--gold-3);
+        animation: spin 2s linear infinite;
+      }
+
+      .loading-text {
+        color: var(--gold-1);
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+        font-weight: 500;
+        animation: fadeInOut 2s infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0.5;
         }
 
-        .contact-cta:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+        50% {
+          opacity: 1;
         }
 
-        .contact-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1.2rem 3rem;
-            background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
-            color: white;
-            border-radius: 100px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 2px solid transparent;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        100% {
+          opacity: 0.5;
         }
-
-        .contact-button:hover {
-            transform: translateY(-2px) scale(1.05);
-            box-shadow: 0 15px 30px rgba(203, 169, 111, 0.3);
-            background: linear-gradient(135deg, var(--gold-2), var(--gold-1));
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .category-header {
-                padding: 1.5rem;
-            }
-
-            .category-header h2 {
-                font-size: 1.5rem;
-            }
-
-            .faq-question {
-                padding: 1.5rem;
-            }
-
-            .faq-answer.active {
-                padding: 1.5rem;
-            }
-
-            .contact-cta {
-                padding: 3rem 1.5rem;
-                margin-top: 4rem;
-            }
-        }
-        .loading-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #000000, #1a1a1a);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease-out;
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .loading-container.fade-out {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        #main-content {
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.5s ease-in;
-        }
-
-        #main-content.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .loading-logo {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 2rem;
-            animation: pulse 2s infinite;
-        }
-
-        .loading-spinner {
-            width: 50px;
-            height: 50px;
-            border: 3px solid rgba(203, 169, 111, 0.2);
-            border-radius: 50%;
-            border-top-color: var(--gold-1);
-            animation: spin 1s linear infinite;
-            position: relative;
-        }
-
-        .loading-spinner::after {
-            content: '';
-            position: absolute;
-            top: -3px;
-            left: -3px;
-            right: -3px;
-            bottom: -3px;
-            border: 3px solid transparent;
-            border-radius: 50%;
-            border-top-color: var(--gold-2);
-            animation: spin 1.5s linear infinite;
-        }
-
-        .loading-spinner::before {
-            content: '';
-            position: absolute;
-            top: -6px;
-            left: -6px;
-            right: -6px;
-            bottom: -6px;
-            border: 3px solid transparent;
-            border-radius: 50%;
-            border-top-color: var(--gold-3);
-            animation: spin 2s linear infinite;
-        }
-
-        .loading-text {
-            color: var(--gold-1);
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            font-weight: 500;
-            animation: fadeInOut 2s infinite;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes fadeInOut {
-            0% {
-                opacity: 0.5;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0.5;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-gray-50">
+  <body class="bg-gray-50">
     <!-- Loading Animation Container -->
     <div id="loading-container" class="loading-container">
-        <img src="Images/Countertops-Logo.png" 
-             data-src="Images/Countertops-Logo.png" 
-             alt="Counter Solutions Logo" 
-             class="loading-logo lazy-load">
-        <div class="loading-spinner"></div>
-        <p class="loading-text">Loading FAQ...</p>
+      <img
+        src="Images/Countertops-Logo.png"
+        data-src="Images/Countertops-Logo.png"
+        alt="Counter Solutions Logo"
+        class="loading-logo lazy-load"
+      />
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Loading FAQ...</p>
     </div>
 
     <!-- Main Content -->
     <div id="main-content">
-        <!-- Navbar -->
-        <nav class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden">
-            <div class="sparkle-container"></div>
-            <div class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]">
-                <!-- Logo -->
-                <a href="./index.html" class="text-2xl font-bold text-theme-color hover:text-white transition w-14">
-                    <img src="Images/Countertops-Logo.png" alt="CounterTops Logo" />
-                </a>
+      <!-- Navbar -->
+      <nav
+        class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden"
+      >
+        <div class="sparkle-container"></div>
+        <div
+          class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]"
+        >
+          <!-- Logo -->
+          <a
+            href="./index.html"
+            class="text-2xl font-bold text-theme-color hover:text-white transition w-14"
+          >
+            <img src="Images/Countertops-Logo.png" alt="CounterTops Logo" />
+          </a>
 
-                <!-- Menu for large screens -->
-                <div class="hidden lg:flex space-x-8 items-center">
-                    <a href="./index.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Go to Home Page">
-                        <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Home</p>
-                    </a>
-                    <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View Showroom Page">
-                        <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Showroom</p>
-                    </a>
-                    <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Explore Portfolio">
-                        <i class="fas fa-briefcase mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Portfolio</p>
-                    </a>
-                    <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="About Us">
-                        <i class="fas fa-info-circle mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">About Us</p>
-                    </a>
-                    <a href="./FAQ.html" class="border-b-2 border-theme-color  hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View FAQ">
-                        <i class="fas fa-question-circle mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">FAQ</p>
-                    </a>
-                    <a href="./CareTips.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View Care Tips">
-                        <i class="fas fa-hand-sparkles mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Care Tips</p>
-                    </a>
-                    <a href="./Contact.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Contact Us">
-                        <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Contact</p>
-                    </a>
-                    <a href="#get-estimate-price-section"
-                        class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition"
-                        aria-label="Get a Quote">
-                        <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
-                    </a>
-                </div>
+          <!-- Menu for large screens -->
+          <div class="hidden lg:flex space-x-8 items-center">
+            <a
+              href="./index.html"
+              class="hover:text-theme-color py-2 rounded transition flex items-center"
+              aria-label="Go to Home Page"
+            >
+              <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
+              <p class="text-theme-color">Home</p>
+            </a>
+            <a
+              href="./Showroom.html"
+              class="hover:text-theme-color py-2 rounded transition flex items-center"
+              aria-label="View Showroom Page"
+            >
+              <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
+              <p class="text-theme-color">Showroom</p>
+            </a>
+            <a
+              href="./Portfolio.html"
+              class="hover:text-theme-color py-2 rounded transition flex items-center"
+              aria-label="Explore Portfolio"
+            >
+              <i
+                class="fas fa-briefcase mr-2 text-black"
+                aria-hidden="true"
+              ></i>
+              <p class="text-theme-color">Portfolio</p>
+            </a>
+            <a
+              href="./AboutUs.html"
+              class="hover:text-theme-color py-2 rounded transition flex items-center"
+              aria-label="About Us"
+            >
+              <i
+                class="fas fa-info-circle mr-2 text-black"
+                aria-hidden="true"
+              ></i>
+              <p class="text-theme-color">About Us</p>
+            </a>
+            <a
+              href="./FAQ.html"
+              class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded transition flex items-center"
+              aria-label="View FAQ"
+            >
+              <i
+                class="fas fa-question-circle mr-2 text-black"
+                aria-hidden="true"
+              ></i>
+              <p class="text-theme-color">FAQ</p>
+            </a>
+            <a
+              href="./CareTips.html"
+              class="hover:text-theme-color py-2 rounded transition flex items-center"
+              aria-label="View Care Tips"
+            >
+              <i
+                class="fas fa-hand-sparkles mr-2 text-black"
+                aria-hidden="true"
+              ></i>
+              <p class="text-theme-color">Care Tips</p>
+            </a>
+            <a
+              href="./Contact.html"
+              class="hover:text-theme-color py-2 rounded transition flex items-center"
+              aria-label="Contact Us"
+            >
+              <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
+              <p class="text-theme-color">Contact</p>
+            </a>
+            <a
+              href="#get-estimate-price-section"
+              class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition"
+              aria-label="Get a Quote"
+            >
+              <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+            </a>
+          </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="menu-btn" class="lg:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden flex flex-col bg-black p-4 space-y-3 my-2">
-                <a href="./index.html" class="border-b-2 border-theme-color rounded hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Go to Home Page">
-                    <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Home</p>
-                </a>
-                <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View Showroom Page">
-                    <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Showroom</p>
-                </a>
-                <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Explore Portfolio">
-                    <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Portfolio</p>
-                </a>
-                <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="About Us">
-                    <i class="fas fa-info-circle mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">About Us</p>
-                </a>
-                <a href="./FAQ.html" class="border-b-2 border-theme-color  hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View FAQ">
-                    <i class="fas fa-question-circle mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">FAQ</p>
-                </a>
-                <a href="./CareTips.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View Care Tips">
-                    <i class="fas fa-hand-sparkles mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Care Tips</p>
-                </a>
-                <a href="./Contact.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Contact Us">
-                    <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Contact</p>
-                </a>
-                <a href="#get-estimate-price-section"
-                    class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center"
-                    aria-label="Get a Quote">
-                    <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
-                </a>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <div class="relative h-[85vh] overflow-hidden">
-            <!-- Video Background -->
-            <video  
-                autoplay 
-                muted 
-                loop 
-                playsinline
-                class="absolute inset-0 object-cover w-full h-full z-0 scale-105 transform hover:scale-100 transition-transform duration-[20s]">
-                <source src="Images/Countertops_Warehouse_Inventory.mov" type="video/mov">
-                <source src="Images/Countertops_Warehouse_Inventory.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <!-- Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-0"></div>
-            
-            <!-- Content -->
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center relative z-10 pt-16">
-                <div class="max-w-2xl glass-card p-8 rounded-2xl">
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                        Frequently Asked Questions
-                    </h1>
-                    <p class="text-lg sm:text-xl text-white/90 mb-8">
-                        Find answers to common questions about our countertops and services
-                    </p>
-                </div>
-            </div>
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-btn"
+            class="lg:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
 
-        <!-- FAQ Content -->
-        <section class="py-16">
-            <div class="max-w-4xl mx-auto px-4 py-16">
-                <h1 class="text-4xl font-bold text-center mb-12 fade-in-up">Frequently Asked Questions</h1>
-                
-                <!-- Material Questions -->
-                <div class="mb-16 fade-in-up" style="--delay: 0.2s;">
-                    <div class="category-header">
-                        <h2><i class="fas fa-gem mr-3"></i>Material Questions</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">What's the difference between marble, granite, and quartz?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Marble is a natural stone known for its elegant veining but requires more maintenance. Granite is extremely durable and heat-resistant, perfect for busy kitchens. Quartz is engineered stone that's non-porous, stain-resistant, and requires minimal maintenance.</p>
-                            </div>
-                        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden lg:hidden flex flex-col bg-black p-4 space-y-3 my-2"
+        >
+          <a
+            href="./index.html"
+            class="border-b-2 border-theme-color rounded hover:text-theme-color py-2 rounded flex items-center"
+            aria-label="Go to Home Page"
+          >
+            <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
+            <p class="text-theme-color">Home</p>
+          </a>
+          <a
+            href="./Showroom.html"
+            class="hover:text-theme-color py-2 rounded flex items-center"
+            aria-label="View Showroom Page"
+          >
+            <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
+            <p class="text-theme-color">Showroom</p>
+          </a>
+          <a
+            href="./Portfolio.html"
+            class="hover:text-theme-color py-2 rounded flex items-center"
+            aria-label="Explore Portfolio"
+          >
+            <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
+            <p class="text-theme-color">Portfolio</p>
+          </a>
+          <a
+            href="./AboutUs.html"
+            class="hover:text-theme-color py-2 rounded flex items-center"
+            aria-label="About Us"
+          >
+            <i
+              class="fas fa-info-circle mr-2 text-white"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">About Us</p>
+          </a>
+          <a
+            href="./FAQ.html"
+            class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded flex items-center"
+            aria-label="View FAQ"
+          >
+            <i
+              class="fas fa-question-circle mr-2 text-white"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">FAQ</p>
+          </a>
+          <a
+            href="./CareTips.html"
+            class="hover:text-theme-color py-2 rounded flex items-center"
+            aria-label="View Care Tips"
+          >
+            <i
+              class="fas fa-hand-sparkles mr-2 text-white"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">Care Tips</p>
+          </a>
+          <a
+            href="./Contact.html"
+            class="hover:text-theme-color py-2 rounded flex items-center"
+            aria-label="Contact Us"
+          >
+            <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
+            <p class="text-theme-color">Contact</p>
+          </a>
+          <a
+            href="#get-estimate-price-section"
+            class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center"
+            aria-label="Get a Quote"
+          >
+            <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+          </a>
+        </div>
+      </nav>
 
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">Which material is best for my kitchen?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">The best material depends on your lifestyle and preferences. If you want low maintenance, quartz is ideal. For a natural look with durability, choose granite. For luxury and elegance, marble is perfect but requires more care.</p>
-                            </div>
-                        </div>
+      <!-- Hero Section -->
+      <div class="relative h-[85vh] overflow-hidden">
+        <!-- Video Background -->
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute inset-0 object-cover w-full h-full z-0 scale-105 transform hover:scale-100 transition-transform duration-[20s]"
+        >
+          <source
+            src="Images/Countertops_Warehouse_Inventory.mov"
+            type="video/mov"
+          />
+          <source
+            src="Images/Countertops_Warehouse_Inventory.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
 
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">What are the advantages of quartz countertops?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Quartz countertops offer exceptional durability, stain resistance, and low maintenance. They're non-porous, making them hygienic and resistant to bacteria. Available in a wide range of colors and patterns, quartz is perfect for modern kitchens.</p>
-                            </div>
-                        </div>
+        <!-- Gradient Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-0"
+        ></div>
 
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">Can I use marble in my kitchen?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Yes, marble can be used in kitchens, but it requires more care than other materials. It's susceptible to staining and etching from acidic substances. Regular sealing and careful maintenance are essential for preserving its beauty.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Content -->
+        <div
+          class="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center relative z-10 pt-16"
+        >
+          <div class="max-w-2xl glass-card p-8 rounded-2xl">
+            <h1
+              class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            >
+              Frequently Asked Questions
+            </h1>
+            <p class="text-lg sm:text-xl text-white/90 mb-8">
+              Find answers to common questions about our countertops and
+              services
+            </p>
+          </div>
+        </div>
+      </div>
 
-                <!-- Installation Questions -->
-                <div class="mb-16 fade-in-up" style="--delay: 0.4s;">
-                    <div class="category-header">
-                        <h2><i class="fas fa-tools mr-3"></i>Installation Questions</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">How long does installation take?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Most installations are completed within 1-2 days, depending on the size and complexity of the project. We'll provide a detailed timeline during your consultation.</p>
-                            </div>
-                        </div>
+      <!-- FAQ Content -->
+      <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 py-16">
+          <h1 class="text-4xl font-bold text-center mb-12 fade-in-up">
+            Frequently Asked Questions
+          </h1>
 
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">Do I need to prepare my kitchen for installation?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Yes, please clear all items from your countertops and remove any appliances. We'll provide a detailed preparation checklist before installation.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">What is the installation process?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Our installation process includes template creation, fabrication, and installation. We'll remove your old countertops, prepare the surface, and install the new countertops with precision and care.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">Do you provide sink installation?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Yes, we can install your sink as part of the countertop installation process. We work with both undermount and drop-in sinks, ensuring a perfect fit and professional installation.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Maintenance Questions -->
-                <div class="mb-16 fade-in-up" style="--delay: 0.6s;">
-                    <div class="category-header">
-                        <h2><i class="fas fa-spray-can mr-3"></i>Maintenance Questions</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">How do I care for my countertops?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Daily cleaning with mild soap and water is sufficient for most materials. Avoid harsh chemicals and abrasive cleaners. Natural stone countertops require periodic sealing.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">How often should I seal my countertops?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Natural stone countertops should be sealed every 1-2 years, depending on usage. Quartz countertops don't require sealing.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">What should I avoid using on my countertops?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Avoid using abrasive cleaners, harsh chemicals, or acidic substances like vinegar or lemon juice. Always use cutting boards and trivets to protect the surface from scratches and heat damage.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">How do I remove stains from my countertops?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">For quartz countertops, use a mild detergent and warm water. For natural stone, use a poultice made of baking soda and water. Always test cleaning solutions in an inconspicuous area first.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cost and Pricing Questions -->
-                <div class="mb-16 fade-in-up" style="--delay: 0.8s;">
-                    <div class="category-header">
-                        <h2><i class="fas fa-dollar-sign mr-3"></i>Cost and Pricing Questions</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">How much do countertops cost?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Countertop prices vary based on material, size, and complexity. Quartz typically ranges from $50-$100 per square foot, granite from $40-$200 per square foot, and marble from $50-$250 per square foot. We offer free estimates to help you budget.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">What factors affect the cost of countertops?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Cost factors include material selection, square footage, edge profile, backsplash options, sink cutouts, and installation complexity. We'll provide a detailed breakdown during your consultation.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">Do you offer financing options?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">Yes, we offer flexible financing options to help make your dream countertops more affordable. Contact us to learn more about our financing plans and payment options.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Warranty and Service Questions -->
-                <div class="mb-16 fade-in-up" style="--delay: 1s;">
-                    <div class="category-header">
-                        <h2><i class="fas fa-shield-alt mr-3"></i>Warranty and Service Questions</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">What warranty do you offer?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">We offer a comprehensive warranty on our materials and workmanship. The specific warranty terms vary by material and manufacturer. We'll provide detailed warranty information during your consultation.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">What if I need repairs or maintenance?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">We provide repair and maintenance services for all our installations. Contact us for any issues, and our team will promptly address your concerns with professional service.</p>
-                            </div>
-                        </div>
-
-                        <div class="faq-item">
-                            <div class="faq-question" onclick="toggleAnswer(this)">
-                                <h3 class="text-xl font-semibold text-gray-900">How do I schedule a consultation?</h3>
-                                <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
-                            </div>
-                            <div class="faq-answer">
-                                <p class="text-gray-600">You can schedule a consultation by calling us at (360) 777-6361 or using our online contact form. We'll arrange a convenient time to discuss your project and provide a free estimate.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Material Questions -->
+          <div class="mb-16 fade-in-up" style="--delay: 0.2s">
+            <div class="category-header">
+              <h2><i class="fas fa-gem mr-3"></i>Material Questions</h2>
             </div>
-        </section>
+            <div class="space-y-4">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    What's the difference between marble, granite, and quartz?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Marble is a natural stone known for its elegant veining but
+                    requires more maintenance. Granite is extremely durable and
+                    heat-resistant, perfect for busy kitchens. Quartz is
+                    engineered stone that's non-porous, stain-resistant, and
+                    requires minimal maintenance.
+                  </p>
+                </div>
+              </div>
 
-        <!-- Footer -->
-        <footer class="bg-gradient-to-b from-gray-900 to-black py-16 px-6">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]">
-                <div class="space-y-4">
-                    <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                        Areas of Service
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                    </h3>
-                    <ul class="space-y-2">
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                            Island County
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                            Skagit County
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                            Whatcom County
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                            Snohomish County
-                        </li>
-                    </ul>
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Which material is best for my kitchen?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
                 </div>
-                <div class="space-y-4">
-                    <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                        Our Categories
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                    </h3>
-                    <ul class="space-y-2">
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-gem mr-2 text-theme-color"></i>
-                            <a href="Showroom.html#marble-collection">Marble</a>
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-gem mr-2 text-theme-color"></i>
-                            <a href="Showroom.html#granite-collection">Granite</a>
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-gem mr-2 text-theme-color"></i>
-                            <a href="Showroom.html#quartz-collection">Quartz</a>
-                        </li>
-                    </ul>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    The best material depends on your lifestyle and preferences.
+                    If you want low maintenance, quartz is ideal. For a natural
+                    look with durability, choose granite. For luxury and
+                    elegance, marble is perfect but requires more care.
+                  </p>
                 </div>
-                <div class="space-y-4">
-                    <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                        Main Menu
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                    </h3>
-                    <ul class="space-y-2">
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-home mr-2 text-theme-color"></i>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-store mr-2 text-theme-color"></i>
-                            <a href="./Showroom.html">Showroom</a>
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-briefcase mr-2 text-theme-color"></i>
-                            <a href="./Portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-info-circle mr-2 text-theme-color"></i>
-                            <a href="./AboutUs.html">About Us</a>
-                        </li>
-                        <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-envelope mr-2 text-theme-color"></i>
-                            <a href="#get-estimate-price-section">Get Quote</a>
-                        </li>
-                    </ul>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    What are the advantages of quartz countertops?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
                 </div>
-                <div class="space-y-4">
-                    <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                        Contact Us
-                        <span
-                            class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                    </h3>
-                    <div class="space-y-4">
-                        <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
-                            200 Washington Ave, Burlington, WA 98233
-                        </p>
-                        <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                            <i class="fas fa-phone mr-3 text-theme-color"></i>
-                             +1 (786) 722 4444
-                        </p>
-                    </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Quartz countertops offer exceptional durability, stain
+                    resistance, and low maintenance. They're non-porous, making
+                    them hygienic and resistant to bacteria. Available in a wide
+                    range of colors and patterns, quartz is perfect for modern
+                    kitchens.
+                  </p>
                 </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Can I use marble in my kitchen?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Yes, marble can be used in kitchens, but it requires more
+                    care than other materials. It's susceptible to staining and
+                    etching from acidic substances. Regular sealing and careful
+                    maintenance are essential for preserving its beauty.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
-                <div class="text-center text-gray-400">
-                    <p class="text-sm">&copy; 2025 Counter Solutions. All Rights Reserved.</p>
-                </div>
+          </div>
+
+          <!-- Installation Questions -->
+          <div class="mb-16 fade-in-up" style="--delay: 0.4s">
+            <div class="category-header">
+              <h2><i class="fas fa-tools mr-3"></i>Installation Questions</h2>
             </div>
-        </footer>
+            <div class="space-y-4">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    How long does installation take?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Most installations are completed within 1-2 days, depending
+                    on the size and complexity of the project. We'll provide a
+                    detailed timeline during your consultation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Do I need to prepare my kitchen for installation?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Yes, please clear all items from your countertops and remove
+                    any appliances. We'll provide a detailed preparation
+                    checklist before installation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    What is the installation process?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Our installation process includes template creation,
+                    fabrication, and installation. We'll remove your old
+                    countertops, prepare the surface, and install the new
+                    countertops with precision and care.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Do you provide sink installation?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Yes, we can install your sink as part of the countertop
+                    installation process. We work with both undermount and
+                    drop-in sinks, ensuring a perfect fit and professional
+                    installation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maintenance Questions -->
+          <div class="mb-16 fade-in-up" style="--delay: 0.6s">
+            <div class="category-header">
+              <h2>
+                <i class="fas fa-spray-can mr-3"></i>Maintenance Questions
+              </h2>
+            </div>
+            <div class="space-y-4">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    How do I care for my countertops?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Daily cleaning with mild soap and water is sufficient for
+                    most materials. Avoid harsh chemicals and abrasive cleaners.
+                    Natural stone countertops require periodic sealing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    How often should I seal my countertops?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Natural stone countertops should be sealed every 1-2 years,
+                    depending on usage. Quartz countertops don't require
+                    sealing.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    What should I avoid using on my countertops?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Avoid using abrasive cleaners, harsh chemicals, or acidic
+                    substances like vinegar or lemon juice. Always use cutting
+                    boards and trivets to protect the surface from scratches and
+                    heat damage.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    How do I remove stains from my countertops?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    For quartz countertops, use a mild detergent and warm water.
+                    For natural stone, use a poultice made of baking soda and
+                    water. Always test cleaning solutions in an inconspicuous
+                    area first.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost and Pricing Questions -->
+          <div class="mb-16 fade-in-up" style="--delay: 0.8s">
+            <div class="category-header">
+              <h2>
+                <i class="fas fa-dollar-sign mr-3"></i>Cost and Pricing
+                Questions
+              </h2>
+            </div>
+            <div class="space-y-4">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    How much do countertops cost?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Countertop prices vary based on material, size, and
+                    complexity. Quartz typically ranges from $50-$100 per square
+                    foot, granite from $40-$200 per square foot, and marble from
+                    $50-$250 per square foot. We offer free estimates to help
+                    you budget.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    What factors affect the cost of countertops?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Cost factors include material selection, square footage,
+                    edge profile, backsplash options, sink cutouts, and
+                    installation complexity. We'll provide a detailed breakdown
+                    during your consultation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Do you offer financing options?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    Yes, we offer flexible financing options to help make your
+                    dream countertops more affordable. Contact us to learn more
+                    about our financing plans and payment options.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warranty and Service Questions -->
+          <div class="mb-16 fade-in-up" style="--delay: 1s">
+            <div class="category-header">
+              <h2>
+                <i class="fas fa-shield-alt mr-3"></i>Warranty and Service
+                Questions
+              </h2>
+            </div>
+            <div class="space-y-4">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    What warranty do you offer?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    We offer a comprehensive warranty on our materials and
+                    workmanship. The specific warranty terms vary by material
+                    and manufacturer. We'll provide detailed warranty
+                    information during your consultation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    What if I need repairs or maintenance?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    We provide repair and maintenance services for all our
+                    installations. Contact us for any issues, and our team will
+                    promptly address your concerns with professional service.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    How do I schedule a consultation?
+                  </h3>
+                  <i class="fas fa-chevron-down faq-icon text-theme-color"></i>
+                </div>
+                <div class="faq-answer">
+                  <p class="text-gray-600">
+                    You can schedule a consultation by calling us at (360)
+                    777-6361 or using our online contact form. We'll arrange a
+                    convenient time to discuss your project and provide a free
+                    estimate.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gradient-to-b from-gray-900 to-black py-16 px-6">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]"
+        >
+          <div class="space-y-4">
+            <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+              Areas of Service
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+              ></span>
+            </h3>
+            <ul class="space-y-2">
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                Island County
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                Skagit County
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                Whatcom County
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+                Snohomish County
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+              Our Categories
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+              ></span>
+            </h3>
+            <ul class="space-y-2">
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-gem mr-2 text-theme-color"></i>
+                <a href="Showroom.html#marble-collection">Marble</a>
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-gem mr-2 text-theme-color"></i>
+                <a href="Showroom.html#granite-collection">Granite</a>
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-gem mr-2 text-theme-color"></i>
+                <a href="Showroom.html#quartz-collection">Quartz</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+              Main Menu
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+              ></span>
+            </h3>
+            <ul class="space-y-2">
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-home mr-2 text-theme-color"></i>
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-store mr-2 text-theme-color"></i>
+                <a href="./Showroom.html">Showroom</a>
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-briefcase mr-2 text-theme-color"></i>
+                <a href="./Portfolio.html">Portfolio</a>
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-info-circle mr-2 text-theme-color"></i>
+                <a href="./AboutUs.html">About Us</a>
+              </li>
+              <li
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-envelope mr-2 text-theme-color"></i>
+                <a href="#get-estimate-price-section">Get Quote</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+              Contact Us
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+              ></span>
+            </h3>
+            <div class="space-y-4">
+              <p
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
+                200 Washington Ave, Burlington, WA 98233
+              </p>
+              <p
+                class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+              >
+                <i class="fas fa-phone mr-3 text-theme-color"></i>
+                +1 (786) 722 4444
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
+          <div class="text-center text-gray-400">
+            <p class="text-sm">
+              &copy; 2025 Counter Solutions. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script>
-        // Mobile Menu Toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
+      // Mobile Menu Toggle
+      document
+        .getElementById("menu-btn")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.classList.toggle("hidden");
         });
 
-        // FAQ Toggle Function
-        function toggleAnswer(button) {
-            const answer = button.nextElementSibling;
-            const icon = button.querySelector('.faq-icon');
-            
-            answer.classList.toggle('active');
-            icon.classList.toggle('active');
-        }
+      // FAQ Toggle Function
+      function toggleAnswer(button) {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector(".faq-icon");
+
+        answer.classList.toggle("active");
+        icon.classList.toggle("active");
+      }
     </script>
     <script>
-        // Enhanced Loading Animation
-        window.addEventListener('load', function () {
-            const loadingContainer = document.getElementById('loading-container');
-            const mainContent = document.getElementById('main-content');
+      // Enhanced Loading Animation
+      window.addEventListener("load", function () {
+        const loadingContainer = document.getElementById("loading-container");
+        const mainContent = document.getElementById("main-content");
 
-            // Add fade-out class to loading container
-            loadingContainer.classList.add('fade-out');
+        // Add fade-out class to loading container
+        loadingContainer.classList.add("fade-out");
 
-            // Show main content after loading animation
-            setTimeout(() => {
-                mainContent.classList.add('visible');
-            }, 500);
-        });
+        // Show main content after loading animation
+        setTimeout(() => {
+          mainContent.classList.add("visible");
+        }, 500);
+      });
     </script>
-</body>
-
+  </body>
 </html>

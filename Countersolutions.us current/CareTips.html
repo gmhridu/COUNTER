@@ -1,733 +1,954 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Standard favicon -->
+    <link
+      rel="shortcut icon"
+      href="./Images/Countertops-Logo.png"
+      alt="Counter Solutions - Trusted countertop installer in Burlington, WA USA"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./Images/Countertops-Logo.png" type="image/png" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="./Images/Countertops-Logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Images/Countertops-Logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/Countertops-Logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="./Images/Countertops-Logo.png"
+    />
+
+    <!-- Apple Safari Pinned Tab Icon -->
+    <link
+      rel="mask-icon"
+      href="./Images/Countertops-Logo.png"
+      color="#cba96f"
+    />
+
+    <!-- iOS Safari status bar style -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <title>Countertop Care Tips - Counter Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
-</head>
-<body class="bg-gray-50">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-50">
     <!-- Navbar -->
-    <nav class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden">
-        <div class="sparkle-container"></div>
-        <div class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]">
-                <!-- Logo -->
-                <a href="./index.html" class="text-2xl font-bold text-theme-color hover:text-white transition w-14">
-                    <img src="Images/Countertops-Logo.png" alt="CounterTops Logo" />
-                </a>
+    <nav
+      class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden"
+    >
+      <div class="sparkle-container"></div>
+      <div
+        class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]"
+      >
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="text-2xl font-bold text-theme-color hover:text-white transition w-14"
+        >
+          <img src="Images/Countertops-Logo.png" alt="CounterTops Logo" />
+        </a>
 
-                <!-- Menu for large screens -->
-                <div class="hidden lg:flex space-x-8 items-center">
-                    <a href="./index.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Go to Home Page">
-                        <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Home</p>
-                    </a>
-                    <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View Showroom Page">
-                        <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Showroom</p>
-                    </a>
-                    <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Explore Portfolio">
-                        <i class="fas fa-briefcase mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Portfolio</p>
-                    </a>
-                    <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="About Us">
-                        <i class="fas fa-info-circle mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">About Us</p>
-                    </a>
-                    <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View FAQ">
-                        <i class="fas fa-question-circle mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">FAQ</p>
-                    </a>
-                    <a href="./CareTips.html" class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View Care Tips">
-                        <i class="fas fa-hand-sparkles mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Care Tips</p>
-                    </a>
-                    <a href="./Contact.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Contact Us">
-                        <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Contact</p>
-                    </a>
-                    <a href="#get-estimate-price-section"
-                        class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition"
-                        aria-label="Get a Quote">
-                        <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
-                    </a>
-                </div>
+        <!-- Menu for large screens -->
+        <div class="hidden lg:flex space-x-8 items-center">
+          <a
+            href="./index.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="Go to Home Page"
+          >
+            <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Home</p>
+          </a>
+          <a
+            href="./Showroom.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="View Showroom Page"
+          >
+            <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Showroom</p>
+          </a>
+          <a
+            href="./Portfolio.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="Explore Portfolio"
+          >
+            <i class="fas fa-briefcase mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Portfolio</p>
+          </a>
+          <a
+            href="./AboutUs.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="About Us"
+          >
+            <i
+              class="fas fa-info-circle mr-2 text-black"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">About Us</p>
+          </a>
+          <a
+            href="./FAQ.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="View FAQ"
+          >
+            <i
+              class="fas fa-question-circle mr-2 text-black"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">FAQ</p>
+          </a>
+          <a
+            href="./CareTips.html"
+            class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="View Care Tips"
+          >
+            <i
+              class="fas fa-hand-sparkles mr-2 text-black"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">Care Tips</p>
+          </a>
+          <a
+            href="./Contact.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="Contact Us"
+          >
+            <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Contact</p>
+          </a>
+          <a
+            href="#get-estimate-price-section"
+            class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition"
+            aria-label="Get a Quote"
+          >
+            <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+          </a>
+        </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="menu-btn" class="lg:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="lg:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden flex flex-col bg-black p-4 space-y-3 my-2">
-                <a href="./index.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Go to Home Page">
-                    <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Home</p>
-                </a>
-                <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View Showroom Page">
-                    <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Showroom</p>
-                </a>
-                <a href="./Portfolio.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Explore Portfolio">
-                    <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Portfolio</p>
-                </a>
-                <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="About Us">
-                    <i class="fas fa-info-circle mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">About Us</p>
-                </a>
-                <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View FAQ">
-                    <i class="fas fa-question-circle mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">FAQ</p>
-                </a>
-                <a href="./CareTips.html" class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View Care Tips">
-                    <i class="fas fa-hand-sparkles mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Care Tips</p>
-                </a>
-                <a href="./Contact.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Contact Us">
-                    <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Contact</p>
-                </a>
-                <a href="#get-estimate-price-section"
-                    class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center"
-                    aria-label="Get a Quote">
-                    <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
-                </a>
-            </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden flex flex-col bg-black p-4 space-y-3 my-2"
+      >
+        <a
+          href="./index.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="Go to Home Page"
+        >
+          <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Home</p>
+        </a>
+        <a
+          href="./Showroom.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="View Showroom Page"
+        >
+          <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Showroom</p>
+        </a>
+        <a
+          href="./Portfolio.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="Explore Portfolio"
+        >
+          <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Portfolio</p>
+        </a>
+        <a
+          href="./AboutUs.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="About Us"
+        >
+          <i class="fas fa-info-circle mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">About Us</p>
+        </a>
+        <a
+          href="./FAQ.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="View FAQ"
+        >
+          <i
+            class="fas fa-question-circle mr-2 text-white"
+            aria-hidden="true"
+          ></i>
+          <p class="text-theme-color">FAQ</p>
+        </a>
+        <a
+          href="./CareTips.html"
+          class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="View Care Tips"
+        >
+          <i
+            class="fas fa-hand-sparkles mr-2 text-white"
+            aria-hidden="true"
+          ></i>
+          <p class="text-theme-color">Care Tips</p>
+        </a>
+        <a
+          href="./Contact.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="Contact Us"
+        >
+          <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Contact</p>
+        </a>
+        <a
+          href="#get-estimate-price-section"
+          class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center"
+          aria-label="Get a Quote"
+        >
+          <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+        </a>
+      </div>
     </nav>
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-theme-color text-center mb-8">Countertop Care & Maintenance Tips</h1>
+      <h1 class="text-4xl font-bold text-theme-color text-center mb-8">
+        Countertop Care & Maintenance Tips
+      </h1>
 
-        <!-- Material-Specific Care Tips -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <!-- Marble Care -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="text-center mb-4">
-                    <i class="fas fa-gem text-3xl text-theme-color mb-2"></i>
-                    <h2 class="text-2xl font-bold text-gray-800">Marble Care</h2>
-                </div>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Clean spills immediately with a soft cloth</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Use pH-neutral cleaners only</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Seal every 6-12 months</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-times text-red-500 mt-1"></i>
-                        <span>Avoid acidic cleaners and vinegar</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Granite Care -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="text-center mb-4">
-                    <i class="fas fa-mountain text-3xl text-theme-color mb-2"></i>
-                    <h2 class="text-2xl font-bold text-gray-800">Granite Care</h2>
-                </div>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Use warm water and mild dish soap</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Seal annually for best protection</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Use cutting boards to prevent scratches</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-times text-red-500 mt-1"></i>
-                        <span>Avoid harsh chemicals and abrasive cleaners</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Quartz Care -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <div class="text-center mb-4">
-                    <i class="fas fa-cube text-3xl text-theme-color mb-2"></i>
-                    <h2 class="text-2xl font-bold text-gray-800">Quartz Care</h2>
-                </div>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>No sealing required</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Use mild soap and water for cleaning</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-check text-green-500 mt-1"></i>
-                        <span>Stain and heat resistant</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <i class="fas fa-times text-red-500 mt-1"></i>
-                        <span>Avoid direct heat and harsh chemicals</span>
-                    </li>
-                </ul>
-            </div>
+      <!-- Material-Specific Care Tips -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <!-- Marble Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-center mb-4">
+            <i class="fas fa-gem text-3xl text-theme-color mb-2"></i>
+            <h2 class="text-2xl font-bold text-gray-800">Marble Care</h2>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Clean spills immediately with a soft cloth</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Use pH-neutral cleaners only</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Seal every 6-12 months</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-times text-red-500 mt-1"></i>
+              <span>Avoid acidic cleaners and vinegar</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- General Care Tips -->
-        <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
-            <h2 class="text-3xl font-bold text-theme-color mb-6">General Care Guidelines</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Daily Maintenance</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                            <span>Wipe spills immediately with a soft cloth</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                            <span>Use coasters under glasses and cups</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                            <span>Clean with mild soap and warm water</span>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Preventive Care</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                            <span>Use trivets for hot items</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                            <span>Use cutting boards for food preparation</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
-                            <span>Regularly inspect for damage or wear</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Granite Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-center mb-4">
+            <i class="fas fa-mountain text-3xl text-theme-color mb-2"></i>
+            <h2 class="text-2xl font-bold text-gray-800">Granite Care</h2>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Use warm water and mild dish soap</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Seal annually for best protection</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Use cutting boards to prevent scratches</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-times text-red-500 mt-1"></i>
+              <span>Avoid harsh chemicals and abrasive cleaners</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- Professional Maintenance -->
-        <div class="bg-theme-color text-white p-8 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold mb-6">Professional Maintenance</h2>
-            <p class="mb-6">For optimal care and longevity of your countertops, consider our professional maintenance services:</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="text-center">
-                    <i class="fas fa-tools text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Regular Sealing</h3>
-                    <p>Professional sealing to protect your investment</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-magic text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Deep Cleaning</h3>
-                    <p>Specialized cleaning to maintain beauty</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-wrench text-4xl mb-4"></i>
-                    <h3 class="text-xl font-semibold mb-2">Repair Services</h3>
-                    <p>Expert repair for any damage or wear</p>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <button onclick="showBookingSection()" class="bg-white text-theme-color px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
-                    Schedule Maintenance
-                </button>
-            </div>
+        <!-- Quartz Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-center mb-4">
+            <i class="fas fa-cube text-3xl text-theme-color mb-2"></i>
+            <h2 class="text-2xl font-bold text-gray-800">Quartz Care</h2>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>No sealing required</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Use mild soap and water for cleaning</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-check text-green-500 mt-1"></i>
+              <span>Stain and heat resistant</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fas fa-times text-red-500 mt-1"></i>
+              <span>Avoid direct heat and harsh chemicals</span>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <!-- General Care Tips -->
+      <div class="bg-white p-8 rounded-lg shadow-lg mb-12">
+        <h2 class="text-3xl font-bold text-theme-color mb-6">
+          General Care Guidelines
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Daily Maintenance</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                <span>Wipe spills immediately with a soft cloth</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                <span>Use coasters under glasses and cups</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                <span>Clean with mild soap and warm water</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Preventive Care</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2">
+                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                <span>Use trivets for hot items</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                <span>Use cutting boards for food preparation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                <span>Regularly inspect for damage or wear</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Maintenance -->
+      <div class="bg-theme-color text-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-6">Professional Maintenance</h2>
+        <p class="mb-6">
+          For optimal care and longevity of your countertops, consider our
+          professional maintenance services:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <i class="fas fa-tools text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Regular Sealing</h3>
+            <p>Professional sealing to protect your investment</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-magic text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Deep Cleaning</h3>
+            <p>Specialized cleaning to maintain beauty</p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-wrench text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Repair Services</h3>
+            <p>Expert repair for any damage or wear</p>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <button
+            onclick="showBookingSection()"
+            class="bg-white text-theme-color px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+          >
+            Schedule Maintenance
+          </button>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gradient-to-b from-gray-900 to-black py-16 px-6">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]">
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Areas of Service
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <ul class="space-y-2">
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Island County
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Skagit County
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Whatcom County
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Snohomish County
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Our Categories
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <ul class="space-y-2">
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-gem mr-2 text-theme-color"></i>
-                        <a href="Showroom.html#marble-collection">Marble</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-gem mr-2 text-theme-color"></i>
-                        <a href="Showroom.html#granite-collection">Granite</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-gem mr-2 text-theme-color"></i>
-                        <a href="Showroom.html#quartz-collection">Quartz</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Main Menu
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <ul class="space-y-2">
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-home mr-2 text-theme-color"></i>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-store mr-2 text-theme-color"></i>
-                        <a href="./Showroom.html">Showroom</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-briefcase mr-2 text-theme-color"></i>
-                        <a href="./Portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-info-circle mr-2 text-theme-color"></i>
-                        <a href="./AboutUs.html">About Us</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-envelope mr-2 text-theme-color"></i>
-                        <a href="#get-estimate-price-section">Get Quote</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Contact Us
-                    <span class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <div class="space-y-4">
-                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
-                        200 Washington Ave, Burlington, WA 98233
-                    </p>
-                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-phone mr-3 text-theme-color"></i>
-                         +1 (786) 722 4444
-                    </p>
-                </div>
-            </div>
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]"
+      >
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Areas of Service
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <ul class="space-y-2">
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Island County
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Skagit County
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Whatcom County
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Snohomish County
+            </li>
+          </ul>
         </div>
-        <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
-            <div class="text-center text-gray-400">
-                <p class="text-sm">&copy; 2025 Counter Solutions. All Rights Reserved.</p>
-            </div>
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Our Categories
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <ul class="space-y-2">
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-gem mr-2 text-theme-color"></i>
+              <a href="Showroom.html#marble-collection">Marble</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-gem mr-2 text-theme-color"></i>
+              <a href="Showroom.html#granite-collection">Granite</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-gem mr-2 text-theme-color"></i>
+              <a href="Showroom.html#quartz-collection">Quartz</a>
+            </li>
+          </ul>
         </div>
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Main Menu
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <ul class="space-y-2">
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-home mr-2 text-theme-color"></i>
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-store mr-2 text-theme-color"></i>
+              <a href="./Showroom.html">Showroom</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-briefcase mr-2 text-theme-color"></i>
+              <a href="./Portfolio.html">Portfolio</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-info-circle mr-2 text-theme-color"></i>
+              <a href="./AboutUs.html">About Us</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-envelope mr-2 text-theme-color"></i>
+              <a href="#get-estimate-price-section">Get Quote</a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Contact Us
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <div class="space-y-4">
+            <p
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
+              200 Washington Ave, Burlington, WA 98233
+            </p>
+            <p
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-phone mr-3 text-theme-color"></i>
+              +1 (786) 722 4444
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
+        <div class="text-center text-gray-400">
+          <p class="text-sm">
+            &copy; 2025 Counter Solutions. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Booking Container -->
     <div class="booking-container">
-        <div class="booking-content">
-            <button class="close-booking" onclick="closeBookingSection()">
-                <i class="fas fa-times"></i>
-            </button>
+      <div class="booking-content">
+        <button class="close-booking" onclick="closeBookingSection()">
+          <i class="fas fa-times"></i>
+        </button>
 
-            <div class="flex items-center justify-center mb-6">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-900 mb-2">
-                        Book Your Maintenance Service
-                    </h2>
-                    <p class="text-gray-600">
-                        Schedule professional care for your countertops
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex flex-wrap gap-4 mb-6">
-                <div class="flex items-center bg-gray-50 p-3 rounded-lg flex-1 min-w-[200px]">
-                    <i class="fas fa-check-circle text-theme-color text-xl mr-3"></i>
-                    <span class="text-sm">Professional Service</span>
-                </div>
-                <div class="flex items-center bg-gray-50 p-3 rounded-lg flex-1 min-w-[200px]">
-                    <i class="fas fa-clock text-theme-color text-xl mr-3"></i>
-                    <span class="text-sm">Convenient Scheduling</span>
-                </div>
-                <div class="flex items-center bg-gray-50 p-3 rounded-lg flex-1 min-w-[200px]">
-                    <i class="fas fa-star text-theme-color text-xl mr-3"></i>
-                    <span class="text-sm">Expert Technicians</span>
-                </div>
-            </div>
-
-            <form id="booking-form" class="space-y-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="form-group">
-                        <label class="form-label">Full Name <span class="text-red-500">*</span></label>
-                        <input type="text" class="form-input" required placeholder="Enter your full name" />
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Phone Number <span class="text-red-500">*</span></label>
-                        <input type="tel" class="form-input" required placeholder="(555) 555-5555" />
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Email Address <span class="text-red-500">*</span></label>
-                        <input type="email" class="form-input" required placeholder="your@email.com" />
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Address <span class="text-red-500">*</span></label>
-                        <input type="text" class="form-input" required placeholder="Enter your address" />
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Preferred Date <span class="text-red-500">*</span></label>
-                    <div class="calendar-grid">
-                        <!-- Calendar headers -->
-                        <div class="calendar-header">Sun</div>
-                        <div class="calendar-header">Mon</div>
-                        <div class="calendar-header">Tue</div>
-                        <div class="calendar-header">Wed</div>
-                        <div class="calendar-header">Thu</div>
-                        <div class="calendar-header">Fri</div>
-                        <div class="calendar-header">Sat</div>
-                        <!-- Calendar days will be populated by JavaScript -->
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Preferred Time <span class="text-red-500">*</span></label>
-                    <div class="time-slots">
-                        <div class="time-slot">9:00 AM</div>
-                        <div class="time-slot">10:00 AM</div>
-                        <div class="time-slot">11:00 AM</div>
-                        <div class="time-slot">1:00 PM</div>
-                        <div class="time-slot">2:00 PM</div>
-                        <div class="time-slot">3:00 PM</div>
-                        <div class="time-slot">4:00 PM</div>
-                        <div class="time-slot">5:00 PM</div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Service Type <span class="text-red-500">*</span></label>
-                    <select class="form-input" required>
-                        <option value="">Select a service</option>
-                        <option value="sealing">Regular Sealing</option>
-                        <option value="cleaning">Deep Cleaning</option>
-                        <option value="repair">Repair Services</option>
-                        <option value="consultation">Consultation</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">Additional Notes</label>
-                    <textarea class="form-input" rows="3" placeholder="Tell us more about your needs..."></textarea>
-                </div>
-
-                <div class="mt-8">
-                    <button type="submit" class="w-full bg-theme-color text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#78551b] transition-colors">
-                        Book Appointment
-                    </button>
-                </div>
-            </form>
+        <div class="flex items-center justify-center mb-6">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-2">
+              Book Your Maintenance Service
+            </h2>
+            <p class="text-gray-600">
+              Schedule professional care for your countertops
+            </p>
+          </div>
         </div>
+
+        <div class="flex flex-wrap gap-4 mb-6">
+          <div
+            class="flex items-center bg-gray-50 p-3 rounded-lg flex-1 min-w-[200px]"
+          >
+            <i class="fas fa-check-circle text-theme-color text-xl mr-3"></i>
+            <span class="text-sm">Professional Service</span>
+          </div>
+          <div
+            class="flex items-center bg-gray-50 p-3 rounded-lg flex-1 min-w-[200px]"
+          >
+            <i class="fas fa-clock text-theme-color text-xl mr-3"></i>
+            <span class="text-sm">Convenient Scheduling</span>
+          </div>
+          <div
+            class="flex items-center bg-gray-50 p-3 rounded-lg flex-1 min-w-[200px]"
+          >
+            <i class="fas fa-star text-theme-color text-xl mr-3"></i>
+            <span class="text-sm">Expert Technicians</span>
+          </div>
+        </div>
+
+        <form id="booking-form" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="form-group">
+              <label class="form-label"
+                >Full Name <span class="text-red-500">*</span></label
+              >
+              <input
+                type="text"
+                class="form-input"
+                required
+                placeholder="Enter your full name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"
+                >Phone Number <span class="text-red-500">*</span></label
+              >
+              <input
+                type="tel"
+                class="form-input"
+                required
+                placeholder="(555) 555-5555"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"
+                >Email Address <span class="text-red-500">*</span></label
+              >
+              <input
+                type="email"
+                class="form-input"
+                required
+                placeholder="your@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"
+                >Address <span class="text-red-500">*</span></label
+              >
+              <input
+                type="text"
+                class="form-input"
+                required
+                placeholder="Enter your address"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Preferred Date <span class="text-red-500">*</span></label
+            >
+            <div class="calendar-grid">
+              <!-- Calendar headers -->
+              <div class="calendar-header">Sun</div>
+              <div class="calendar-header">Mon</div>
+              <div class="calendar-header">Tue</div>
+              <div class="calendar-header">Wed</div>
+              <div class="calendar-header">Thu</div>
+              <div class="calendar-header">Fri</div>
+              <div class="calendar-header">Sat</div>
+              <!-- Calendar days will be populated by JavaScript -->
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Preferred Time <span class="text-red-500">*</span></label
+            >
+            <div class="time-slots">
+              <div class="time-slot">9:00 AM</div>
+              <div class="time-slot">10:00 AM</div>
+              <div class="time-slot">11:00 AM</div>
+              <div class="time-slot">1:00 PM</div>
+              <div class="time-slot">2:00 PM</div>
+              <div class="time-slot">3:00 PM</div>
+              <div class="time-slot">4:00 PM</div>
+              <div class="time-slot">5:00 PM</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Service Type <span class="text-red-500">*</span></label
+            >
+            <select class="form-input" required>
+              <option value="">Select a service</option>
+              <option value="sealing">Regular Sealing</option>
+              <option value="cleaning">Deep Cleaning</option>
+              <option value="repair">Repair Services</option>
+              <option value="consultation">Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Additional Notes</label>
+            <textarea
+              class="form-input"
+              rows="3"
+              placeholder="Tell us more about your needs..."
+            ></textarea>
+          </div>
+
+          <div class="mt-8">
+            <button
+              type="submit"
+              class="w-full bg-theme-color text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#78551b] transition-colors"
+            >
+              Book Appointment
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <style>
-        /* Booking Container Styles */
-        .booking-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
+      /* Booking Container Styles */
+      .booking-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
 
-        .booking-container.visible {
-            opacity: 1;
-            visibility: visible;
-        }
+      .booking-container.visible {
+        opacity: 1;
+        visibility: visible;
+      }
 
-        .booking-content {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            width: 90%;
-            max-width: 600px;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+      .booking-content {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 90%;
+        max-width: 600px;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
 
-        .close-booking {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: #666;
-            cursor: pointer;
-            padding: 0.5rem;
-            transition: color 0.3s ease;
-        }
+      .close-booking {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #666;
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: color 0.3s ease;
+      }
 
-        .close-booking:hover {
-            color: #333;
-        }
+      .close-booking:hover {
+        color: #333;
+      }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
 
-        .form-label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #333;
-        }
+      .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #333;
+      }
 
-        .form-input {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
+      .form-input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
 
-        .form-input:focus {
-            outline: none;
-            border-color: #cba96f;
-        }
+      .form-input:focus {
+        outline: none;
+        border-color: #cba96f;
+      }
 
-        .calendar-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-        }
+      .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
 
-        .calendar-header {
-            text-align: center;
-            font-weight: 600;
-            color: #666;
-            padding: 0.5rem;
-        }
+      .calendar-header {
+        text-align: center;
+        font-weight: 600;
+        color: #666;
+        padding: 0.5rem;
+      }
 
-        .calendar-day {
-            aspect-ratio: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            border-radius: 0.5rem;
-            transition: all 0.2s;
-        }
+      .calendar-day {
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        transition: all 0.2s;
+      }
 
-        .calendar-day:hover:not(.disabled) {
-            background: rgba(203, 169, 111, 0.1);
-        }
+      .calendar-day:hover:not(.disabled) {
+        background: rgba(203, 169, 111, 0.1);
+      }
 
-        .calendar-day.selected {
-            background: #cba96f;
-            color: white;
-        }
+      .calendar-day.selected {
+        background: #cba96f;
+        color: white;
+      }
 
-        .calendar-day.disabled {
-            opacity: 0.3;
-            cursor: not-allowed;
-        }
+      .calendar-day.disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
 
-        .time-slots {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-        }
+      .time-slots {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
 
-        .time-slot {
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 0.5rem;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+      .time-slot {
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 0.5rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
 
-        .time-slot:hover {
-            background-color: #f5f5f5;
-        }
+      .time-slot:hover {
+        background-color: #f5f5f5;
+      }
 
-        .time-slot.selected {
-            background-color: #cba96f;
-            color: white;
-            border-color: #cba96f;
-        }
+      .time-slot.selected {
+        background-color: #cba96f;
+        color: white;
+        border-color: #cba96f;
+      }
     </style>
 
     <script src="script.js"></script>
     <script>
-        // Show booking section
-        function showBookingSection() {
-            const bookingContainer = document.querySelector(".booking-container");
-            bookingContainer.classList.add("visible");
-            initializeCalendar();
-            initializeTimeSlots();
+      // Show booking section
+      function showBookingSection() {
+        const bookingContainer = document.querySelector(".booking-container");
+        bookingContainer.classList.add("visible");
+        initializeCalendar();
+        initializeTimeSlots();
+      }
+
+      // Close booking section
+      function closeBookingSection() {
+        const bookingContainer = document.querySelector(".booking-container");
+        bookingContainer.classList.remove("visible");
+      }
+
+      // Initialize calendar
+      function initializeCalendar() {
+        const calendarGrid = document.querySelector(".calendar-grid");
+        const today = new Date();
+        const currentMonth = today.getMonth();
+        const currentYear = today.getFullYear();
+
+        // Clear existing days
+        while (calendarGrid.children.length > 7) {
+          calendarGrid.removeChild(calendarGrid.lastChild);
         }
 
-        // Close booking section
-        function closeBookingSection() {
-            const bookingContainer = document.querySelector(".booking-container");
-            bookingContainer.classList.remove("visible");
+        // Get first day of month
+        const firstDay = new Date(currentYear, currentMonth, 1);
+        const startingDay = firstDay.getDay();
+
+        // Get days in month
+        const daysInMonth = new Date(
+          currentYear,
+          currentMonth + 1,
+          0
+        ).getDate();
+
+        // Add empty cells for days before first day
+        for (let i = 0; i < startingDay; i++) {
+          const emptyCell = document.createElement("div");
+          emptyCell.classList.add("calendar-day", "disabled");
+          calendarGrid.appendChild(emptyCell);
         }
 
-        // Initialize calendar
-        function initializeCalendar() {
-            const calendarGrid = document.querySelector(".calendar-grid");
-            const today = new Date();
-            const currentMonth = today.getMonth();
-            const currentYear = today.getFullYear();
+        // Add days of month
+        for (let i = 1; i <= daysInMonth; i++) {
+          const dayCell = document.createElement("div");
+          dayCell.classList.add("calendar-day");
+          dayCell.textContent = i;
 
-            // Clear existing days
-            while (calendarGrid.children.length > 7) {
-                calendarGrid.removeChild(calendarGrid.lastChild);
+          // Disable past days
+          if (i < today.getDate() && currentMonth === today.getMonth()) {
+            dayCell.classList.add("disabled");
+          }
+
+          dayCell.addEventListener("click", function () {
+            if (!this.classList.contains("disabled")) {
+              document.querySelectorAll(".calendar-day").forEach((day) => {
+                day.classList.remove("selected");
+              });
+              this.classList.add("selected");
             }
+          });
 
-            // Get first day of month
-            const firstDay = new Date(currentYear, currentMonth, 1);
-            const startingDay = firstDay.getDay();
-
-            // Get days in month
-            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-
-            // Add empty cells for days before first day
-            for (let i = 0; i < startingDay; i++) {
-                const emptyCell = document.createElement("div");
-                emptyCell.classList.add("calendar-day", "disabled");
-                calendarGrid.appendChild(emptyCell);
-            }
-
-            // Add days of month
-            for (let i = 1; i <= daysInMonth; i++) {
-                const dayCell = document.createElement("div");
-                dayCell.classList.add("calendar-day");
-                dayCell.textContent = i;
-
-                // Disable past days
-                if (i < today.getDate() && currentMonth === today.getMonth()) {
-                    dayCell.classList.add("disabled");
-                }
-
-                dayCell.addEventListener("click", function() {
-                    if (!this.classList.contains("disabled")) {
-                        document.querySelectorAll(".calendar-day").forEach((day) => {
-                            day.classList.remove("selected");
-                        });
-                        this.classList.add("selected");
-                    }
-                });
-
-                calendarGrid.appendChild(dayCell);
-            }
+          calendarGrid.appendChild(dayCell);
         }
+      }
 
-        // Initialize time slots
-        function initializeTimeSlots() {
-            const timeSlots = document.querySelectorAll(".time-slot");
+      // Initialize time slots
+      function initializeTimeSlots() {
+        const timeSlots = document.querySelectorAll(".time-slot");
 
-            timeSlots.forEach((slot) => {
-                slot.addEventListener("click", function() {
-                    document.querySelectorAll(".time-slot").forEach((s) => {
-                        s.classList.remove("selected");
-                    });
-                    this.classList.add("selected");
-                });
+        timeSlots.forEach((slot) => {
+          slot.addEventListener("click", function () {
+            document.querySelectorAll(".time-slot").forEach((s) => {
+              s.classList.remove("selected");
             });
-        }
+            this.classList.add("selected");
+          });
+        });
+      }
 
-        // Form Validation
-        document.getElementById("booking-form").addEventListener("submit", function(e) {
-            e.preventDefault();
+      // Form Validation
+      document
+        .getElementById("booking-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
-            // Check if date is selected
-            const selectedDate = document.querySelector(".calendar-day.selected");
-            if (!selectedDate) {
-                alert("Please select a date");
-                return;
-            }
+          // Check if date is selected
+          const selectedDate = document.querySelector(".calendar-day.selected");
+          if (!selectedDate) {
+            alert("Please select a date");
+            return;
+          }
 
-            // Check if time is selected
-            const selectedTime = document.querySelector(".time-slot.selected");
-            if (!selectedTime) {
-                alert("Please select a time");
-                return;
-            }
+          // Check if time is selected
+          const selectedTime = document.querySelector(".time-slot.selected");
+          if (!selectedTime) {
+            alert("Please select a time");
+            return;
+          }
 
-            // Show loading state
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.innerHTML;
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Booking...';
-            submitButton.disabled = true;
+          // Show loading state
+          const submitButton = this.querySelector('button[type="submit"]');
+          const originalText = submitButton.innerHTML;
+          submitButton.innerHTML =
+            '<i class="fas fa-spinner fa-spin mr-2"></i> Booking...';
+          submitButton.disabled = true;
 
-            // Simulate form submission (replace with actual API call)
-            setTimeout(() => {
-                // Show success message
-                const bookingContainer = document.querySelector(".booking-content");
-                bookingContainer.innerHTML = `
+          // Simulate form submission (replace with actual API call)
+          setTimeout(() => {
+            // Show success message
+            const bookingContainer = document.querySelector(".booking-content");
+            bookingContainer.innerHTML = `
                     <div class="text-center">
                         <div class="mb-6">
                             <i class="fas fa-check-circle text-6xl text-green-500 mb-4"></i>
@@ -740,8 +961,8 @@
                         </button>
                     </div>
                 `;
-            }, 1500);
+          }, 1500);
         });
     </script>
-</body>
+  </body>
 </html>

@@ -10,8 +10,24 @@
     <meta name="keywords"
         content="countertop installation Burlington Washington (WA),countertop installation Burlington, granite countertop installers Burlington Washington, quartz countertop design experts Washington, marble countertop fabrication Burlington WA, affordable kitchen countertops Washington,affordable kitchen countertops in Burlington,custom bathroom countertops Burlington, local countertop contractors WA, best countertop replacement services Burlington, high-quality chaep countertops Washington,best Counter Solutions Burlington WA" />
 
+    <!-- Standard favicon -->
     <link rel="shortcut icon" href="./Images/Countertops-Logo.png"
         alt="Counter Solutions - Trusted countertop installer in Burlington, WA USA" type="image/x-icon" />
+    <link rel="icon" href="./Images/Countertops-Logo.png" type="image/png" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="./Images/Countertops-Logo.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./Images/Countertops-Logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/Countertops-Logo.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="./Images/Countertops-Logo.png" />
+
+    <!-- Apple Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="./Images/Countertops-Logo.png" color="#cba96f" />
+
+    <!-- iOS Safari status bar style -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
     <!-- <title>Counter Solutions</title> -->
     <title>
         Countersolutions - Best Countertops in Burlington, WA & Seattle Area
@@ -1589,6 +1605,23 @@
 
         <!-- Simple & Fast Process Section -->
         <div class="relative py-12 md:py-16 bg-white">
+            <style>
+                /* Mobile-friendly video styles */
+                @media (max-width: 768px) {
+                    .video-container {
+                        width: 100%;
+                        max-width: 100%;
+                        margin: 0 auto;
+                    }
+                    #process-video {
+                        width: 100%;
+                        height: 550px;
+                        aspect-ratio: 16/9;
+                        object-fit: cover;
+                    }
+
+                }
+            </style>
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
                     <!-- Video Column -->
@@ -1607,7 +1640,7 @@
                                 minutes
                             </p>
                         </div>
-                        <div class="relative group">
+                        <div class="relative group max-w-2xl mx-auto video-container">
                             <div id="video-loading"
                                 class="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-xl z-10">
                                 <div
@@ -1616,12 +1649,12 @@
                             </div>
                             <div class="relative cursor-pointer" onclick="toggleVideoPlayback()">
                                 <video id="process-video"
-                                    class="w-full h-[400px] rounded-xl shadow-lg opacity-0 transition-opacity duration-300"
+                                    class="w-full max-h-full h-full sm:h-[500px] rounded-lg opacity-1 transition-opacity duration-300"
                                     poster="Images/Video-Thumbnail.png" preload="auto">
                                     <source src="Images/Countersolutions.mp4" type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-xl">
+                                <div class="absolute inset-0 bg-transparent">
                                 </div>
                                 <div id="play-pause-overlay"
                                     class="absolute inset-0 flex items-center justify-center opacity-100 transition-opacity duration-300">

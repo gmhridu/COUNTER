@@ -1,497 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Standard favicon -->
+    <link
+      rel="shortcut icon"
+      href="./Images/Countertops-Logo.png"
+      alt="Counter Solutions - Trusted countertop installer in Burlington, WA USA"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./Images/Countertops-Logo.png" type="image/png" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Images/Countertops-Logo.png" type="image/x-icon">
-    <title>Counter Solutions - Countertop Portfolio in Burlington, Washington & Seattle Area</title>
-    <meta name="description"
-        content="Explore our premium selection of marble, granite, and quartz countertop installations. View our portfolio of stunning kitchen and bathroom countertop transformations in Burlington, Washington, and the surrounding areas.">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="./Images/Countertops-Logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./Images/Countertops-Logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/Countertops-Logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="./Images/Countertops-Logo.png"
+    />
+
+    <!-- Apple Safari Pinned Tab Icon -->
+    <link
+      rel="mask-icon"
+      href="./Images/Countertops-Logo.png"
+      color="#cba96f"
+    />
+
+    <!-- iOS Safari status bar style -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <title>
+      Counter Solutions - Countertop Portfolio in Burlington, Washington &
+      Seattle Area
+    </title>
+    <meta
+      name="description"
+      content="Explore our premium selection of marble, granite, and quartz countertop installations. View our portfolio of stunning kitchen and bathroom countertop transformations in Burlington, Washington, and the surrounding areas."
+    />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16947000105"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16947000105"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'AW-16947000105');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16947000105");
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./Portfolio.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Portfolio.css" />
+  </head>
 
-<body class="bg-gray-100">
+  <body class="bg-gray-100">
     <!-- Navbar -->
-   <nav class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden">
-        <div class="sparkle-container"></div>
-        <div class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]">
-                <!-- Logo -->
-                <a href="./index.html" class="text-2xl font-bold text-theme-color hover:text-white transition w-14">
-                    <img src="Images/Countertops-Logo.png" alt="CounterTops Logo" />
-                </a>
+    <nav
+      class="relative bg-white text-white py-4 lg:px-6 shadow-lg overflow-hidden"
+    >
+      <div class="sparkle-container"></div>
+      <div
+        class="container mx-auto flex justify-between items-center max-lg:w-[90%] lg:max-w-[80%]"
+      >
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="text-2xl font-bold text-theme-color hover:text-white transition w-14"
+        >
+          <img src="Images/Countertops-Logo.png" alt="CounterTops Logo" />
+        </a>
 
-                <!-- Menu for large screens -->
-                <div class="hidden lg:flex space-x-8 items-center">
-                    <a href="./index.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Go to Home Page">
-                        <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Home</p>
-                    </a>
-                    <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View Showroom Page">
-                        <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Showroom</p>
-                    </a>
-                    <a href="./Portfolio.html" class="border-b-2 border-theme-color  hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Explore Portfolio">
-                        <i class="fas fa-briefcase mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Portfolio</p>
-                    </a>
-                    <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="About Us">
-                        <i class="fas fa-info-circle mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">About Us</p>
-                    </a>
-                    <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View FAQ">
-                        <i class="fas fa-question-circle mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">FAQ</p>
-                    </a>
-                    <a href="./CareTips.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="View Care Tips">
-                        <i class="fas fa-hand-sparkles mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Care Tips</p>
-                    </a>
-                    <a href="./Contact.html" class="hover:text-theme-color py-2 rounded transition flex items-center"
-                        aria-label="Contact Us">
-                        <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
-                        <p class="text-theme-color">Contact</p>
-                    </a>
-                    <a href="#get-estimate-price-section"
-                        class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition"
-                        aria-label="Get a Quote">
-                        <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
-                    </a>
-                </div>
+        <!-- Menu for large screens -->
+        <div class="hidden lg:flex space-x-8 items-center">
+          <a
+            href="./index.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="Go to Home Page"
+          >
+            <i class="fas fa-home mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Home</p>
+          </a>
+          <a
+            href="./Showroom.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="View Showroom Page"
+          >
+            <i class="fas fa-store mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Showroom</p>
+          </a>
+          <a
+            href="./Portfolio.html"
+            class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="Explore Portfolio"
+          >
+            <i class="fas fa-briefcase mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Portfolio</p>
+          </a>
+          <a
+            href="./AboutUs.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="About Us"
+          >
+            <i
+              class="fas fa-info-circle mr-2 text-black"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">About Us</p>
+          </a>
+          <a
+            href="./FAQ.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="View FAQ"
+          >
+            <i
+              class="fas fa-question-circle mr-2 text-black"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">FAQ</p>
+          </a>
+          <a
+            href="./CareTips.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="View Care Tips"
+          >
+            <i
+              class="fas fa-hand-sparkles mr-2 text-black"
+              aria-hidden="true"
+            ></i>
+            <p class="text-theme-color">Care Tips</p>
+          </a>
+          <a
+            href="./Contact.html"
+            class="hover:text-theme-color py-2 rounded transition flex items-center"
+            aria-label="Contact Us"
+          >
+            <i class="fas fa-envelope mr-2 text-black" aria-hidden="true"></i>
+            <p class="text-theme-color">Contact</p>
+          </a>
+          <a
+            href="#get-estimate-price-section"
+            class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold flex items-center hover:bg-theme-color transition"
+            aria-label="Get a Quote"
+          >
+            <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+          </a>
+        </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="menu-btn" class="lg:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="lg:hidden text-black focus:outline-none bg-gray-900 text-white py-1 px-2"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden flex flex-col bg-black p-4 space-y-3 my-2">
-                <a href="./index.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Go to Home Page">
-                    <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Home</p>
-                </a>
-                <a href="./Showroom.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View Showroom Page">
-                    <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Showroom</p>
-                </a>
-                <a href="./Portfolio.html" class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Explore Portfolio">
-                    <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Portfolio</p>
-                </a>
-                <a href="./AboutUs.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="About Us">
-                    <i class="fas fa-info-circle mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">About Us</p>
-                </a>
-                <a href="./FAQ.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View FAQ">
-                    <i class="fas fa-question-circle mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">FAQ</p>
-                </a>
-                <a href="./CareTips.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="View Care Tips">
-                    <i class="fas fa-hand-sparkles mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Care Tips</p>
-                </a>
-                <a href="./Contact.html" class="hover:text-theme-color py-2 rounded flex items-center"
-                    aria-label="Contact Us">
-                    <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
-                    <p class="text-theme-color">Contact</p>
-                </a>
-                <a href="#get-estimate-price-section"
-                    class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center"
-                    aria-label="Get a Quote">
-                    <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
-                </a>
-            </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden flex flex-col bg-black p-4 space-y-3 my-2"
+      >
+        <a
+          href="./index.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="Go to Home Page"
+        >
+          <i class="fas fa-home mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Home</p>
+        </a>
+        <a
+          href="./Showroom.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="View Showroom Page"
+        >
+          <i class="fas fa-store mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Showroom</p>
+        </a>
+        <a
+          href="./Portfolio.html"
+          class="border-b-2 border-theme-color hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="Explore Portfolio"
+        >
+          <i class="fas fa-briefcase mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Portfolio</p>
+        </a>
+        <a
+          href="./AboutUs.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="About Us"
+        >
+          <i class="fas fa-info-circle mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">About Us</p>
+        </a>
+        <a
+          href="./FAQ.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="View FAQ"
+        >
+          <i
+            class="fas fa-question-circle mr-2 text-white"
+            aria-hidden="true"
+          ></i>
+          <p class="text-theme-color">FAQ</p>
+        </a>
+        <a
+          href="./CareTips.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="View Care Tips"
+        >
+          <i
+            class="fas fa-hand-sparkles mr-2 text-white"
+            aria-hidden="true"
+          ></i>
+          <p class="text-theme-color">Care Tips</p>
+        </a>
+        <a
+          href="./Contact.html"
+          class="hover:text-theme-color py-2 rounded flex items-center"
+          aria-label="Contact Us"
+        >
+          <i class="fas fa-envelope mr-2 text-white" aria-hidden="true"></i>
+          <p class="text-theme-color">Contact</p>
+        </a>
+        <a
+          href="#get-estimate-price-section"
+          class="bg-theme-color text-white px-5 py-2 rounded-lg font-semibold text-center hover:bg-[#78551b] flex items-center"
+          aria-label="Get a Quote"
+        >
+          <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Get Quote
+        </a>
+      </div>
     </nav>
     <!-- Hero Section -->
     <section class="relative bg-white">
-        <div class="relative h-[40vh] md:h-[50vh] overflow-hidden">
-            <img src="Images/Modern Kitchen Transformation Quartz countertops with waterfall edge.jpeg"
-                alt="Counter Solutions Portfolio" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center text-white">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Portfolio</h1>
-                    <p class="text-xl md:text-2xl">Stunning Countertop Transformations</p>
-                </div>
-            </div>
+      <div class="relative h-[40vh] md:h-[50vh] overflow-hidden">
+        <img
+          src="Images/Modern Kitchen Transformation Quartz countertops with waterfall edge.jpeg"
+          alt="Counter Solutions Portfolio"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"
+        ></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Our Portfolio</h1>
+            <p class="text-xl md:text-2xl">
+              Stunning Countertop Transformations
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Portfolio Filter -->
     <section class="py-8 bg-white">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="flex flex-wrap justify-center gap-4">
-                <button class="filter-btn active px-6 py-2 rounded-full bg-theme-color text-white" data-filter="all">
-                    All Projects
-                </button>
-                <button
-                    class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-theme-color hover:text-white transition"
-                    data-filter="kitchen">
-                    Kitchen
-                </button>
-                <button
-                    class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-theme-color hover:text-white transition"
-                    data-filter="bathroom">
-                    Bathroom
-                </button>
-                <button
-                    class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-theme-color hover:text-white transition"
-                    data-filter="commercial">
-                    Commercial
-                </button>
-            </div>
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="flex flex-wrap justify-center gap-4">
+          <button
+            class="filter-btn active px-6 py-2 rounded-full bg-theme-color text-white"
+            data-filter="all"
+          >
+            All Projects
+          </button>
+          <button
+            class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-theme-color hover:text-white transition"
+            data-filter="kitchen"
+          >
+            Kitchen
+          </button>
+          <button
+            class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-theme-color hover:text-white transition"
+            data-filter="bathroom"
+          >
+            Bathroom
+          </button>
+          <button
+            class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-theme-color hover:text-white transition"
+            data-filter="commercial"
+          >
+            Commercial
+          </button>
         </div>
+      </div>
     </section>
 
     <!-- Portfolio Grid -->
     <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Kitchen Project 1 -->
-                <div class="portfolio-item kitchen" data-category="kitchen">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="Images/Modern Kitchen Transformation Quartz countertops with waterfall edge.jpeg"
-                                alt="Modern Kitchen Transformation"
-                                class="w-full h-full object-cover transition duration-300 hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end">
-                                <div class="p-6 text-white">
-                                    <h3 class="text-xl font-bold mb-2">Modern Kitchen Transformation</h3>
-                                    <p class="text-sm">Quartz countertops with waterfall edge</p>
-                                    <div class="mt-2 flex flex-wrap gap-2">
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">White Quartz</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Waterfall Edge</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Modern Design</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Kitchen Project 1 -->
+          <div class="portfolio-item kitchen" data-category="kitchen">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="Images/Modern Kitchen Transformation Quartz countertops with waterfall edge.jpeg"
+                  alt="Modern Kitchen Transformation"
+                  class="w-full h-full object-cover transition duration-300 hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end"
+                >
+                  <div class="p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">
+                      Modern Kitchen Transformation
+                    </h3>
+                    <p class="text-sm">
+                      Quartz countertops with waterfall edge
+                    </p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >White Quartz</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Waterfall Edge</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Modern Design</span
+                      >
                     </div>
+                  </div>
                 </div>
-
-                <!-- Kitchen Project 2 -->
-                <div class="portfolio-item kitchen" data-category="kitchen">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="Images/Traditional Kitchen Design Granite countertops with custom edge profile.jpeg"
-                                alt="Traditional Kitchen Countertop"
-                                class="w-full h-full object-cover transition duration-300 hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end">
-                                <div class="p-6 text-white">
-                                    <h3 class="text-xl font-bold mb-2">Traditional Kitchen Design</h3>
-                                    <p class="text-sm">Granite countertops with custom edge profile</p>
-                                    <div class="mt-2 flex flex-wrap gap-2">
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Granite</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Custom Edge</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Traditional</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bathroom Project 1 -->
-                <div class="portfolio-item bathroom" data-category="bathroom">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="Images/Luxury Bathroom Vanity Marble countertop with integrated sink.jpeg"
-                                alt="Luxury Bathroom Vanity"
-                                class="w-full h-full object-cover transition duration-300 hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end">
-                                <div class="p-6 text-white">
-                                    <h3 class="text-xl font-bold mb-2">Luxury Bathroom Vanity</h3>
-                                    <p class="text-sm">Premium Carrara marble countertop with integrated sink</p>
-                                    <div class="mt-2 flex flex-wrap gap-2">
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Marble</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Integrated Sink</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Custom Edge</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bathroom Project 2 -->
-                <div class="portfolio-item bathroom" data-category="bathroom">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="Images/Modern Bathroom Design Quartz countertop with undermount sink.jpeg"
-                                alt="Modern Bathroom Design"
-                                class="w-full h-full object-cover transition duration-300 hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end">
-                                <div class="p-6 text-white">
-                                    <h3 class="text-xl font-bold mb-2">Modern Bathroom Design</h3>
-                                    <p class="text-sm">Quartz countertop with undermount sink</p>
-                                    <div class="mt-2 flex flex-wrap gap-2">
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Quartz</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Undermount Sink</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Modern Design</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modern Kitchen Island -->
-                <div class="portfolio-item kitchen" data-category="kitchen">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="Images/Modern Kitchen Island Contemporary waterfall edge design with integrated seating .jpeg"
-                                alt="Modern Kitchen Island"
-                                class="w-full h-full object-cover transition duration-300 hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end">
-                                <div class="p-6 text-white">
-                                    <h3 class="text-xl font-bold mb-2">Modern Kitchen Island</h3>
-                                    <p class="text-sm">Contemporary waterfall edge design with integrated seating</p>
-                                    <div class="mt-2 flex flex-wrap gap-2">
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Waterfall Edge</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Integrated
-                                            Seating</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Modern Design</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Commercial Project 1 -->
-                <div class="portfolio-item commercial" data-category="commercial">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="Images/Office Reception Counter Custom quartz reception desk.jpeg"
-                                alt="Office Reception Counter"
-                                class="w-full h-full object-cover transition duration-300 hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end">
-                                <div class="p-6 text-white">
-                                    <h3 class="text-xl font-bold mb-2">Office Reception Counter</h3>
-                                    <p class="text-sm">Custom quartz reception desk with modern design</p>
-                                    <div class="mt-2 flex flex-wrap gap-2">
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">White Quartz</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Custom Design</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Commercial</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Commercial Project 2 -->
-                <div class="portfolio-item commercial" data-category="commercial">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="relative h-64 overflow-hidden">
-                            <img src="Images/Restaurant Bar Counter Durable granite bar top.webp"
-                                alt="Restaurant Bar Counter"
-                                class="w-full h-full object-cover transition duration-300 hover:scale-110">
-                            <div
-                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end">
-                                <div class="p-6 text-white">
-                                    <h3 class="text-xl font-bold mb-2">Restaurant Bar Counter</h3>
-                                    <p class="text-sm">Durable granite bar top with premium finish</p>
-                                    <div class="mt-2 flex flex-wrap gap-2">
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Granite</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Bar Top</span>
-                                        <span class="text-xs bg-white/20 px-2 py-1 rounded-full">Commercial</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              </div>
             </div>
+          </div>
+
+          <!-- Kitchen Project 2 -->
+          <div class="portfolio-item kitchen" data-category="kitchen">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="Images/Traditional Kitchen Design Granite countertops with custom edge profile.jpeg"
+                  alt="Traditional Kitchen Countertop"
+                  class="w-full h-full object-cover transition duration-300 hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end"
+                >
+                  <div class="p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">
+                      Traditional Kitchen Design
+                    </h3>
+                    <p class="text-sm">
+                      Granite countertops with custom edge profile
+                    </p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Granite</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Custom Edge</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Traditional</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bathroom Project 1 -->
+          <div class="portfolio-item bathroom" data-category="bathroom">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="Images/Luxury Bathroom Vanity Marble countertop with integrated sink.jpeg"
+                  alt="Luxury Bathroom Vanity"
+                  class="w-full h-full object-cover transition duration-300 hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end"
+                >
+                  <div class="p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">
+                      Luxury Bathroom Vanity
+                    </h3>
+                    <p class="text-sm">
+                      Premium Carrara marble countertop with integrated sink
+                    </p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Marble</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Integrated Sink</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Custom Edge</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bathroom Project 2 -->
+          <div class="portfolio-item bathroom" data-category="bathroom">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="Images/Modern Bathroom Design Quartz countertop with undermount sink.jpeg"
+                  alt="Modern Bathroom Design"
+                  class="w-full h-full object-cover transition duration-300 hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end"
+                >
+                  <div class="p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">
+                      Modern Bathroom Design
+                    </h3>
+                    <p class="text-sm">
+                      Quartz countertop with undermount sink
+                    </p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Quartz</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Undermount Sink</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Modern Design</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modern Kitchen Island -->
+          <div class="portfolio-item kitchen" data-category="kitchen">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="Images/Modern Kitchen Island Contemporary waterfall edge design with integrated seating .jpeg"
+                  alt="Modern Kitchen Island"
+                  class="w-full h-full object-cover transition duration-300 hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end"
+                >
+                  <div class="p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">
+                      Modern Kitchen Island
+                    </h3>
+                    <p class="text-sm">
+                      Contemporary waterfall edge design with integrated seating
+                    </p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Waterfall Edge</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Integrated Seating</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Modern Design</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commercial Project 1 -->
+          <div class="portfolio-item commercial" data-category="commercial">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="Images/Office Reception Counter Custom quartz reception desk.jpeg"
+                  alt="Office Reception Counter"
+                  class="w-full h-full object-cover transition duration-300 hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end"
+                >
+                  <div class="p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">
+                      Office Reception Counter
+                    </h3>
+                    <p class="text-sm">
+                      Custom quartz reception desk with modern design
+                    </p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >White Quartz</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Custom Design</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Commercial</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commercial Project 2 -->
+          <div class="portfolio-item commercial" data-category="commercial">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src="Images/Restaurant Bar Counter Durable granite bar top.webp"
+                  alt="Restaurant Bar Counter"
+                  class="w-full h-full object-cover transition duration-300 hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition duration-300 flex items-end"
+                >
+                  <div class="p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">
+                      Restaurant Bar Counter
+                    </h3>
+                    <p class="text-sm">
+                      Durable granite bar top with premium finish
+                    </p>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Granite</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Bar Top</span
+                      >
+                      <span class="text-xs bg-white/20 px-2 py-1 rounded-full"
+                        >Commercial</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="py-16 bg-theme-color text-white">
-        <div class="container mx-auto px-4 max-w-6xl text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Space?</h2>
-            <p class="text-xl mb-8">Contact us today for a free consultation and quote</p>
-            <a href="./Contact.html"
-                class="bg-white text-theme-color px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
-                Get in Touch
-            </a>
-        </div>
+      <div class="container mx-auto px-4 max-w-6xl text-center">
+        <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Space?</h2>
+        <p class="text-xl mb-8">
+          Contact us today for a free consultation and quote
+        </p>
+        <a
+          href="./Contact.html"
+          class="bg-white text-theme-color px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block"
+        >
+          Get in Touch
+        </a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gradient-to-b from-gray-900 to-black py-16 px-6">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]">
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Areas of Service
-                    <span
-                        class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <ul class="space-y-2">
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Island County
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Skagit County
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Whatcom County
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
-                        Snohomish County
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Our Categories
-                    <span
-                        class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <ul class="space-y-2">
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-gem mr-2 text-theme-color"></i>
-                        <a href="Showroom.html#marble-collection">Marble</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-gem mr-2 text-theme-color"></i>
-                        <a href="Showroom.html#granite-collection">Granite</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-gem mr-2 text-theme-color"></i>
-                        <a href="Showroom.html#quartz-collection">Quartz</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Main Menu
-                    <span
-                        class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <ul class="space-y-2">
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-home mr-2 text-theme-color"></i>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-store mr-2 text-theme-color"></i>
-                        <a href="./Showroom.html">Showroom</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-briefcase mr-2 text-theme-color"></i>
-                        <a href="./Portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-info-circle mr-2 text-theme-color"></i>
-                        <a href="./AboutUs.html">About Us</a>
-                    </li>
-                    <li class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-envelope mr-2 text-theme-color"></i>
-                        <a href="#get-estimate-price-section">Get Quote</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
-                    Contact Us
-                    <span
-                        class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"></span>
-                </h3>
-                <div class="space-y-4">
-                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
-                        200 Washington Ave, Burlington, WA 98233
-                    </p>
-                    <p class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center">
-                        <i class="fas fa-phone mr-3 text-theme-color"></i>
-                         +1 (786) 722 4444
-                    </p>
-                </div>
-            </div>
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 max-lg:w-[90%] lg:max-w-[80%]"
+      >
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Areas of Service
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <ul class="space-y-2">
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Island County
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Skagit County
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Whatcom County
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-2 text-theme-color"></i>
+              Snohomish County
+            </li>
+          </ul>
         </div>
-        <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
-            <div class="text-center text-gray-400">
-                <p class="text-sm">&copy; 2025 Counter Solutions. All Rights Reserved.</p>
-            </div>
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Our Categories
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <ul class="space-y-2">
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-gem mr-2 text-theme-color"></i>
+              <a href="Showroom.html#marble-collection">Marble</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-gem mr-2 text-theme-color"></i>
+              <a href="Showroom.html#granite-collection">Granite</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-gem mr-2 text-theme-color"></i>
+              <a href="Showroom.html#quartz-collection">Quartz</a>
+            </li>
+          </ul>
         </div>
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Main Menu
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <ul class="space-y-2">
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-home mr-2 text-theme-color"></i>
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-store mr-2 text-theme-color"></i>
+              <a href="./Showroom.html">Showroom</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-briefcase mr-2 text-theme-color"></i>
+              <a href="./Portfolio.html">Portfolio</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-info-circle mr-2 text-theme-color"></i>
+              <a href="./AboutUs.html">About Us</a>
+            </li>
+            <li
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-envelope mr-2 text-theme-color"></i>
+              <a href="#get-estimate-price-section">Get Quote</a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="text-white text-xl font-bold mb-6 relative inline-block">
+            Contact Us
+            <span
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-theme-color to-transparent"
+            ></span>
+          </h3>
+          <div class="space-y-4">
+            <p
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-map-marker-alt mr-3 text-theme-color"></i>
+              200 Washington Ave, Burlington, WA 98233
+            </p>
+            <p
+              class="text-gray-300 hover:text-theme-color transition duration-300 flex items-center"
+            >
+              <i class="fas fa-phone mr-3 text-theme-color"></i>
+              +1 (786) 722 4444
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-16 pt-8 border-t border-gray-800">
+        <div class="text-center text-gray-400">
+          <p class="text-sm">
+            &copy; 2025 Counter Solutions. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <a href="tel:+13607776361"
-        class="cta-button fixed bottom-4 left-4 bg-theme-color text-white p-4 rounded-full shadow-lg hover:bg-[#78551b] transition duration-300">
-        <i class="fas fa-phone text-xl"></i>
+    <a
+      href="tel:+13607776361"
+      class="cta-button fixed bottom-4 left-4 bg-theme-color text-white p-4 rounded-full shadow-lg hover:bg-[#78551b] transition duration-300"
+    >
+      <i class="fas fa-phone text-xl"></i>
     </a>
 
     <script src="script.js"></script>
     <script>
-        // Portfolio Filter
-        document.addEventListener('DOMContentLoaded', function () {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const portfolioItems = document.querySelectorAll('.portfolio-item');
+      // Portfolio Filter
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-theme-color', 'text-white'));
-                    filterButtons.forEach(btn => btn.classList.add('bg-gray-200'));
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) =>
+              btn.classList.remove("active", "bg-theme-color", "text-white")
+            );
+            filterButtons.forEach((btn) => btn.classList.add("bg-gray-200"));
 
-                    // Add active class to clicked button
-                    this.classList.add('active', 'bg-theme-color', 'text-white');
-                    this.classList.remove('bg-gray-200');
+            // Add active class to clicked button
+            this.classList.add("active", "bg-theme-color", "text-white");
+            this.classList.remove("bg-gray-200");
 
-                    const filter = this.getAttribute('data-filter');
+            const filter = this.getAttribute("data-filter");
 
-                    portfolioItems.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
+            portfolioItems.forEach((item) => {
+              if (
+                filter === "all" ||
+                item.getAttribute("data-category") === filter
+              ) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
             });
+          });
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>
